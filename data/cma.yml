@@ -1,0 +1,55 @@
+orgs: 
+  enable: true
+  title: Partners
+  members: 
+    - name  : Rockefeller Foundation (RF)
+      role: Funder, Strategy, Steering Committee
+      emphasis: true
+      link: 
+        link_title: RF Covid-19 Response
+        link_url: "https://www.rockefellerfoundation.org/covid-19-response/"
+      bio : "The Rockefeller Foundation advances new frontiers of science, data, and innovation to solve global challenges related to health, food, power, and economic mobility. The CMA is a part of RF's COVID-19 response."
+    - name  : Society of Medical Decision Making (SMDM)
+      role: Administrator, Subject Matter Expertise, Steering Committeeh
+      emphasis: true
+      link: 
+        link_title: "SMDM Website"
+        link_url: "https://smdm.org"
+      bio: SMDM is dedicated to promoting rational and systematic approaches to decision making that will improve the health and clinical care of individuals and assist health policy formation.
+    - name  : Fenris
+      emphasis: true
+      role: Coordination for technical and strategic assistance
+      bio: Fenris was founded by Aman Ahuja to support teams developing responsible data systems for public benefit through collaborative co-design of product strategy, equitable data governance, and targeted technical assistance.
+      link: 
+        link_title: "Website"
+        link_url: "https://amanahuja.me/"
+
+team: 
+  enable  : true
+  title   : The Fenris Team
+  members  :
+    - name  : Aman Ahuja
+      image : /images/team/amanahuja.jpg
+      role: Steering Committee, Product Strategy, Project Lead
+      bio : Aman is a team builder and advisor with 15 years of experience helping organizations implement data tools and develop product strategies.
+      link: 
+        link_title: "Website"
+        link_url: "https://amanahuja.me/"
+    - name  : Kamini Iyer
+      image : /images/team/kaminiiyer.png
+      bio : Kamini often finds herself at the intersection of data, design, and impact. With a background spanning across marketing, graphic design, data analytics, and program management, she guides teams to translate data insights into meaningful experiences and visuals. She is especially focused on lending her expertise to teams that are focused on social impact work.
+      link: 
+        link_title: "Website"
+        link_url: "https://www.kaminiiyer.com/"
+    - name  : Daniel Olmstead
+      image : /images/team/danielolmstead.jpg
+      bio : Daniel is a data scientist and designer with two decades of experience telling stories through design, discourse, and data. Although his background is in front-end user interfaces, his more recent projects relied heavily on engineering complex cloud pipelines to build dynamic visualizations out of high-volume, streaming data.
+      link: 
+        link_title: "Website"
+        link_url: "https://www.omsteadily.com/"
+    - name  : Louis Potok 
+      image : /images/team/louispotok.jpg
+      bio : Louis is a consultant and entrepreneur with experience across a variety of domains. He has been a behavioral economist focused on financial inclusion, a product manager and data science leader at early-stage software startups, and is currently building Recoolit, a climate-tech startup preventing gigatons of emissions from refrigerant gases.
+      link: 
+        link_title: "LinkedIn"
+        link_url: "https://www.linkedin.com/in/louispotok/"

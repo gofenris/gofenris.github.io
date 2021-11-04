@@ -1,0 +1,92 @@
+{{ define "main" }}
+
+<article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+  {{ .Content }}
+</article>
+
+{{/* Section on Activities */}}
+
+{{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
+  {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
+  {{/* Create a variable with that section to use in multiple places. */}}
+  {{ $section := where .Site.RegularPages "Section" "in" $mainSections }}
+  {{/* Check to see if the section is defined for ranging through it */}}
+  {{ $section_count := len $section }}
+  {{ if ge $section_count 1 }}
+    {{/* Derive the section name  */}}
+    {{ $section_name := index (.Site.Params.mainSections) 0 }}
+
+    <div class="pa3 pa4-ns w-100 w-70-ns center">
+      {{/* Use $section_name to get the section title. Use "with" to only show it if it exists */}}
+       {{ with .Site.GetPage "section" $section_name }}
+          <h1 class="flex-none">
+            {{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}
+          </h1>
+        {{ end }}
+
+      {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
+
+      <section class="w-100 mw8">
+        {{/* Range through the first $n_posts items of the section */}}
+        {{ range (first $n_posts $section) }}
+          <div class="relative w-100 mb4">
+            {{ partial "summary-with-image.html" . }}
+          </div>
+        {{ end }}
+      </section>
+
+      {{ if ge $section_count (add $n_posts 1) }}
+      <section class="w-100">
+        <h1 class="f3">{{ i18n "more" }}</h1>
+        {{/* Now, range through the next four after the initial $n_posts items. Nest the requirements, "after" then "first" on the outside */}}
+        {{ range (first 4 (after $n_posts $section))  }}
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="{{ .RelPermalink }}" class="link black dim">
+              {{ .Title }}
+            </a>
+          </h2>
+        {{ end }}
+
+        {{/* As above, Use $section_name to get the section title, and URL. Use "with" to only show it if it exists */}}
+        {{ with .Site.GetPage "section" $section_name }}
+          <a href="{{ .RelPermalink }}" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">{{ i18n "allTitle" . }}</a>
+        {{ end }}
+        </section>
+      {{ end }}
+
+      </div>
+  {{ end }}
+
+{{/* Section on Projects */}}
+
+<div id="portfolio-banner" class="cf bg-fa-blue-l">
+  <h2 class="bg-fa-blue bb mt0 mb2 mb3-ns fa-light-gray pv4 tc ">Portfolio Highlights</h2>
+
+  <div class="mw9 center fa-light-gray">
+  <section class="cf pa3 mw9 center tl">
+
+  <aside class="flex-ns flex-wrap justify-around">
+    
+      <div class="relative mw6 mb4">
+        <a href="cma" class="link fa-light-gray dim">
+          <div class="ph2 ph3-l pv3 pv4-l f4 tc-l center measure lh-copy">
+              <h1 class="f4 mb2">COVID Modeling Accelerator</h1>
+            <p class="f5 lh-copy nested-copy-line-height">Fenris partnered with the Society of Medical Decision Making (SMDM) and Rockefeller Foundation to help a cohort of academic research teams better meet the needs of state and local decision-makers for actionable insights from epidemiological, economic and operational data models.</p>
+          </div>
+        </a>
+      </div>
+
+    {{ range first 5 (where ( where .Site.RegularPages.ByDate.Reverse "Section" "portfolio" ) ".Params.cardsummary" "!=" nil ) }}
+      <div class="relative mw6 mb4">
+        <a href="{{ .Permalink }}" class="link dim fa-light-gray"><div class="ph2 ph3-l pv3 pv4-l f4 tc-l center measure lh-copy">
+          <h1 class="f4 mb2"> {{ .Title }} </h1>
+          <p class="f5 lh-copy nested-copy-line-height">{{ .Params.cardsummary }}</p>
+        </div></a>
+      </div>
+	{{ end }}
+  </aside>
+
+    </section>
+</div></div>
+
+{{ end }} 

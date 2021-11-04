@@ -1,4 +1,37 @@
 baseURL = 'http://gofenris.com/'
 languageCode = 'en-us'
-title = 'Fenris test site'
+title = 'Fenris'
+
+# Theme ananke, modified
 theme = 'ananke'
+
+Paginate = 10
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[taxonomies] 
+    category = "categories" 
+
+[menu]
+    [[menu.main]]
+    name = "Home"
+    identifier = "home"
+    weight = 100
+    url = "/"
+
+[params]
+    #favicon = ""
+    site_logo = "/images/fenris/fenris_logo_2a_bw_small2.png"
+	# images/fenris_logo_2a_bw.png"
+	# images/fenris_logo_2ct_nb.png"
+    description = "Fenris website."
+
+    background_color_class = "bg-fa-blue"
+    custom_css = ["assets/custom.css"] 
+
+    recent_copy = "Active Initiatives"
+
+# content display on home
+mainSections = ["activity"]
+recent_posts_number = 3
+show_reading_time = false
