@@ -21,7 +21,7 @@ enableRobotsTXT = true
 
 [params]
     #favicon = ""
-    site_logo = "/images/fenris/fenris_logo_2a_bw_small2.png"
+    site_logo = "/images/fenris/fenris_logo_2a_t_small2.png"
 	# images/fenris_logo_2a_bw.png"
 	# images/fenris_logo_2ct_nb.png"
     description = "Fenris website."

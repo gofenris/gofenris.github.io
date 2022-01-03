@@ -1,0 +1,11 @@
+## Hugo ##
+/public/
+/resources/_gen/
+
+## Vim / IDE ##
+[._]*.sw[a-p]
+tags
+
+## Personal
+PROJECT_NOTE
+
