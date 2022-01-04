@@ -20,7 +20,7 @@ enableRobotsTXT = true
     url = "/"
 
 [params]
-    #favicon = ""
+    favicon = true
     site_logo = "/images/fenris/fenris_logo_2a_t_small2.png"
 	# images/fenris_logo_2a_bw.png"
 	# images/fenris_logo_2ct_nb.png"
