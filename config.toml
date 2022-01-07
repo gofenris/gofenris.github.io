@@ -1,4 +1,4 @@
-baseURL = 'http://gofenris.com/'
+baseURL = 'https://gofenris.com/'
 languageCode = 'en-us'
 title = 'Fenris'
 
@@ -29,9 +29,9 @@ enableRobotsTXT = true
     background_color_class = "bg-fa-blue"
     custom_css = ["assets/custom.css"] 
 
-    recent_copy = "Active Initiatives"
+    recent_copy = "Recent Posts"
 
 # content display on home
-mainSections = ["activity"]
+mainSections = ["posts"]
 recent_posts_number = 3
 show_reading_time = false
