@@ -31,6 +31,11 @@ enableRobotsTXT = true
 
     recent_copy = "Recent Posts"
 
+[sitemap] 
+    changefreq = "monthly"
+    priority = 0.5
+    filename = "sitemap.xml"
+
 # content display on home
 mainSections = ["posts"]
 recent_posts_number = 3
