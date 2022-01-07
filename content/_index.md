@@ -1,5 +1,5 @@
 ---
-title: "We are Fenris"
+title: "We are fenris"
 featured_image: "images/home_banner_01.jpg"
 description: "Data initiatives for public benefit."
 ---
