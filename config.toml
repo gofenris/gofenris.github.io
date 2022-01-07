@@ -10,31 +10,31 @@ googleAnalytics = ""
 enableRobotsTXT = true
 
 [taxonomies] 
-    category = "categories" 
+  category = "categories" 
 
 [menu]
-    [[menu.main]]
-    name = "Home"
-    identifier = "home"
-    weight = 100
-    url = "/"
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
 
 [params]
-    favicon = true
-    site_logo = "/images/fenris/fenris_logo_2a_t_small2.png"
-	# images/fenris_logo_2a_bw.png"
-	# images/fenris_logo_2ct_nb.png"
-    description = "Fenris website."
+  favicon = true
+  site_logo = "/images/fenris/fenris_logo_2a_t_small2.png"
+      # images/fenris_logo_2a_bw.png"
+      # images/fenris_logo_2ct_nb.png"
+  description = "Fenris website."
 
-    background_color_class = "bg-fa-blue"
-    custom_css = ["assets/custom.css"] 
+  background_color_class = "bg-fa-blue"
+  custom_css = ["assets/custom.css"] 
 
-    recent_copy = "Recent Posts"
+  recent_copy = "Recent Posts"
 
 [sitemap] 
-    changefreq = "monthly"
-    priority = 0.5
-    filename = "sitemap.xml"
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 # content display on home
 mainSections = ["posts"]
