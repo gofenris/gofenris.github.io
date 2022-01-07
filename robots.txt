@@ -2,5 +2,5 @@ User-agent: *
 # robotstxt.org - if ENV production variable is false robots will be disallowed.
 
 Allow: /
-Sitemap: http://gofenris.com//sitemap.xml
+Sitemap: https://gofenris.com//sitemap.xml
 
