@@ -21,22 +21,23 @@ enableRobotsTXT = true
 
 [params]
   favicon = true
+  author = "Aman Ahuja"
   site_logo = "/images/fenris/fenris_logo_2a_t_small2.png"
       # images/fenris_logo_2a_bw.png"
       # images/fenris_logo_2ct_nb.png"
-  description = "Fenris website."
+  description = "We are fenris: data initiatives for public benefit."
 
   background_color_class = "bg-fa-blue"
   custom_css = ["assets/custom.css"] 
 
+  # content display on home
   recent_copy = "Recent Posts"
+  mainSections = ["post"]
+  recent_posts_number = 3
+  show_reading_time = false
 
 [sitemap] 
   changefreq = "monthly"
   priority = 0.5
   filename = "sitemap.xml"
 
-# content display on home
-mainSections = ["posts"]
-recent_posts_number = 3
-show_reading_time = false
