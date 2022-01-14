@@ -1,6 +1,17 @@
-Start Section B
-<h1 class="flex-none">
-  {{ .Title }}
-</h1>
-{{ .Content }}
-END
+<div id="about-banner" class="cf bg-fa-blue-l">
+  <h2 class="fa-light-gray pv2 tc">
+    {{ .Title }}
+  </h2>
+
+  <div class="center fa-light-gray pa3 mw9 tc-l measure">
+    <section class="f4 lh-copy">
+      {{ .Content }}
+    </section>
+
+  {{ range first 3 (where .Site.RegularPages "Section" "about") }}
+    {{ .Title}}
+  {{ end }} 
+
+  </div>
+
+</div>
