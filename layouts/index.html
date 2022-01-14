@@ -4,15 +4,22 @@
   {{ .Content }}
 </article>
 
-{{/* Section 1 */}}
-{{ with .Site.GetPage "/logos" }} 
+{{/* Section */}}
+{{ with .Site.GetPage "/logo-section" }} 
   <div class="pa3 pa4-ns w-100 w-70-ns center">
     {{ partial "section-a.html" . }}
   </div>
 {{ end }}
 
 
-{{/* Section on Activities */}}
+{{/* Section */}}
+{{ with .Site.GetPage "/about-section" }} 
+  <div class="pa3 pa4-ns w-100 w-70-ns center">
+    {{ partial "section-b.html" . }}
+  </div>
+{{ end }}
+
+{{/* Section on Posts */}}
 
 {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
   {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
