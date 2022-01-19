@@ -9,7 +9,22 @@
     </section>
 
   {{ range first 3 (where .Site.RegularPages "Section" "about") }}
-    {{ .Title}}
+  <div class="fl w-100 w-50-l pa2-l">
+    <article class="mw5 center bg-white br3 pa2 pa3-ns mv2 ba b--black-10 dim">
+      <div class="tc f6 b">
+        <a href="{{ .Params.Link }}" class="fa-blue-d" style="text-decoration:none;">
+        {{ .Title }}
+        </a>
+        <hr class="mw3 bb bw1 b--black-10">
+      </div>
+      <p class="lh-copy measure center black-70 f6">
+        {{ .Description }}<br>
+        <a href="{{ .Params.Link }}" 
+          class="fa-red-d" style="text-decoration:none;">
+          {{ .Params.linktitle }}</a>
+      </p>
+    </article>
+  </div>
   {{ end }} 
 
   </div>

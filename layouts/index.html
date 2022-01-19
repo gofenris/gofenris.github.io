@@ -4,13 +4,6 @@
   {{ .Content }}
 </article>
 
-{{/* Section */}}
-{{ with .Site.GetPage "/logo-section" }} 
-  <div class="pa3 pa4-ns w-100 w-70-ns center">
-    {{ partial "section-a.html" . }}
-  </div>
-{{ end }}
-
 {{/* Section on Posts */}}
 
 {{/* Define a section to pull recent posts from. For Hugo 0.20 this will default to the section with the most number of pages. */}}
@@ -80,10 +73,17 @@
   </div>
 {{ end }}
 
+{{/* Section */}}
+{{ with .Site.GetPage "/logo-section" }} 
+  <div class="pa3 pa4-ns w-100 w-70-ns center">
+    {{ partial "section-a.html" . }}
+  </div>
+{{ end }}
+
 {{/* Section on Contact Form */}}
 <div id="contact-form" class="cf pa3 pa4-m pa5-l mw9 center mid-gray">
 
-  {{/* general-contact-form action="https://formspree.io/f/mgerebpb" */}}
+  {{/* general-contact-form action="https://formspree.io/f/mbjwdkpb" */}}
   {{ partial "general-contact-form.html" . }}
 
 </div>
