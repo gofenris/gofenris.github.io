@@ -33,6 +33,8 @@ enableRobotsTXT = true
       # images/fenris_logo_2ct_nb.png"
   description = "We are fenris: data initiatives for public benefit."
 
+  # Social: instagram, facebook, youtube, gitlab, mastodon, slack, stackoverflow, rss
+
   background_color_class = "bg-fa-blue"
   custom_css = ["assets/custom.css"] 
 
