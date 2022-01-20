@@ -5,11 +5,19 @@ title: "The Data Leadership Cohort: Call for Participation"
 summary: "Co-organized by Fenris, Digital Public and Aspiration, the Data Leadership Cohort (DLC) is an opportunity for peer learning for governance, stewardship and long-term responsible leadership in data-centric missions and ventures. Our first cohort launches in the first quarter of 2022."
 ---
 
-As the world at large and civil society in particular move to increasingly data-centric and data-driven modes of doing work and making change, new challenges emerge in stewarding and governing the data assets that underlie and power those efforts.
+As civil society moves to increasingly data-centric and data-driven modes of doing work and making change, we face new challenges in stewarding and governing the assets that underlie and power those efforts.
 
 New types of leaders are emerging to meet these challenges, but few resources are available to inform governance, stewardship and long-term responsible leadership in data-centric missions and ventures.
 
-## Call for Participation
+**Aspiration, Digital Public, and Fenris are announcing the Data Leadership Cohort (DLC), an opportunity for these leaders to meet, learn, and build networks with each other.**
+
+This is a small-group format for a practice-oriented peer learning group of 8-12 individuals. Over the course of 8 weeks, the group will prototype structures and processes for effective data governance by workshopping each other’s real-world cases. 
+
+We are recruiting an initial cohort now for launch in early 2022. If the first cohort is successful, and based on level of interest, we may consider additional cohorts. We will also provide other ways to engage and to share insights and learnings from the DLC. 
+
+We invite you to express interest in participation in the first cohort, future cohorts, or in general by completing the questionnaire below. 
+
+## Who we are hoping to work with 
 
 The Data Leadership Cohort (DLC) welcomes expressions of interest from anyone for whom one or more of the following questions apply and resonate:
 
@@ -19,29 +27,25 @@ The Data Leadership Cohort (DLC) welcomes expressions of interest from anyone fo
 * Do you lack the expertise or support infrastructure to feel sure about what you’re doing?
 * Do you want to speak and learn from others facing similar or related challenges?
 
-Many people with complementary skills and experience are facing these same challenges, and we think that you can help each other. Announcing the Data Leadership Cohort, a peer learning program from Aspiration, Digital Public, and Fenris Network
+Many people with complementary skills and experience are facing these same challenges, and we think that you can help each other. 
 
-Aspiration, Digital Public, and Fenris Network are producing an opportunity for these leaders to meet, learn, and build networks with each other, utilizing a co-learning framework refined over the last 10 years.
+Through participating, participants will gain a deeper understanding of data governance in a practical sense and get help, expertise, and support from a group of similarly situated practitioners.
 
-We’re recruiting an initial cohort for a practice-oriented data governance peer learning group. Over the course of 8 weeks, a group of 8-12 data governance practitioners will focus on specific design components and requirements for effective data governance by workshopping each others’ real-world cases.
+**What we are not looking to work with at this time:** We may broaden the DLC in the future to include researchers, intermediaries and other stakeholders, but in this phase we are seeking participation from directly responsible parties.
 
-### Who should join this cohort? 
-You’re making a decision about how to design a digital platform, a public service (and/or procurement), or a public interest data sharing project. Your primary goal is to gain a deeper understanding of data governance in a broad, practical sense and, secondarily, to get the help, expertise, and support from a group of similarly situated practitioners.
+### The DLC Program 
 
-Who we are not looking to work with at this time: This is not a call for those who are near to or interested in data governance, but don’t have a specific, direct, applied context in which they are making decisions about how one of the above contexts is implemented. We hope to ultimately broaden this program to include researchers, intermediaries and other stakeholders, but are focusing on directly responsible parties in this first phase.
+The Data Leadership Cohort brings together Aspiration’s field-leading and tested frameworks for peer learning, Digital Public’s expertise in public interest data governance, and practical expertise from Fenris for integrating these ideas into team, process and product.
 
-### How do I join?
-If you would like to participate in the Data Leadership Cohort, let us know before **January 31st 2022** by filling out the CfP form. A link will be posted here. 
+The first cohort will consist of 12 virtual sessions of 90-minute each. Sessions will be calendared once the range of participant time zones is known. 
 
-We will be selecting participants to maximize learning opportunities, identifying for shared challenges, complementary skill sets and compatible levels of experience, and a plurality of roles and perspectives. We will also consider practical constraints such as availability and time zones.
+For those applicants who are not selected or cannot participate in the first cohort, we still encourage you to fill out the questionnaire and express your interest. 
 
-The program will consist of 12 virtual sessions of 90-minute each, held every Tuesday. Sessions will be scheduled based on group availability. 
+### How to express interest
 
-### What if I cannot participate?
+To express interest, visit the website below and follow the application guidelines before December 15 2021. 
 
-This is an experiment for us, bringing together Aspiration’s field-leading and tested frameworks for peer learning, Digital Public’s expertise in public interest data governance, and Fenris’ experience in supporting similar teams. If successful, and based on level of interest, additional cohorts may be offered in the future.
-
-For those applicants who are not selected or cannot participate in the first cohort, we still encourage you to fill out the questionnaire and express your interest. We will provide an opportunity to opt-in to other ways to engage and to receive insights and learnings from the cohorts.
+Participants for each cohort will be selected to maximize learning opportunities -- selecting for shared challenge, complementary skill sets and level of experience, and a plurality of roles and perspectives. We will also consider practical constraints such as availability and time zones.
 
 ## About the Organizers
 
@@ -49,4 +53,4 @@ For those applicants who are not selected or cannot participate in the first coh
 
 [Digital Public](https://www.digitalpublic.io/) is a public interest data governance firm. We help communities, companies, and institutions realize rights in, against, and through digital systems. 
 
-[Fenris](https://gofenris.com/) is a consultant network founded by [Aman Ahuja](https://amanahuja.me) to build and support responsible data systems for public benefit. We work to make such ventures successful and sustainable through collaborative co-design of product strategy, equitable data governance, and by providing targeted technical assistance.
+[Fenris](https://gofenris.com/) supports teams developing responsible data systems for public benefit through collaborative co-design of product strategy, equitable data governance, and targeted technical assistance.
