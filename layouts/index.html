@@ -62,21 +62,14 @@
 
 {{/* Section */}}
 {{ with .Site.GetPage "/about-section" }} 
-    {{ partial "section-b.html" . }}
+    {{ partial "section-about.html" . }}
 {{ end }}
 
 
 {{/* Section */}}
 {{ with .Site.GetPage "/logo-section" }} 
   <div class="pa3 pa4-ns w-100 w-70-ns center">
-    {{ partial "section-a.html" . }}
-  </div>
-{{ end }}
-
-{{/* Section */}}
-{{ with .Site.GetPage "/logo-section" }} 
-  <div class="pa3 pa4-ns w-100 w-70-ns center">
-    {{ partial "section-a.html" . }}
+    {{ partial "logo-section.html" . }}
   </div>
 {{ end }}
 
