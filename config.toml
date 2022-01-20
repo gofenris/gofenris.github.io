@@ -19,6 +19,12 @@ enableRobotsTXT = true
   weight = 100
   url = "/"
 
+  [[menu.main]]
+  name = "About"
+  identifier = "About"
+  weight = 200
+  url = "/#about"
+
 [params]
   favicon = true
   author = "Aman Ahuja"
