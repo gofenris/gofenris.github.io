@@ -3,6 +3,7 @@ date: 2022-01-25
 description: "The Data Leadership Cohort: Call for Participation"
 title: "The Data Leadership Cohort: Call for Participation"
 summary: "Co-organized by Fenris, Digital Public and Aspiration, the Data Leadership Cohort (DLC) is an opportunity for peer learning for governance, stewardship and long-term responsible leadership in data-centric missions and ventures. Our first cohort launches in the first quarter of 2022."
+draft: false
 ---
 
 As civil society moves to increasingly data-centric and data-driven modes of doing work and making change, we face new challenges in stewarding and governing the assets that underlie and power those efforts.
