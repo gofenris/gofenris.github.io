@@ -6,3 +6,5 @@ link: /manifesto
 linktitle: Read our manifesto
 draft: true
 ---
+
+asdflkjasdlfkj
