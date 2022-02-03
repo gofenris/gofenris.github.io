@@ -7,7 +7,7 @@ author: fenris
 draft: false
 ---
 
-Fenris is excited to announce a new program on data leadership and governance, in partnership with Aspiration and Digital Public. 
+Fenris is excited to announce the launch of a new program on data leadership and governance, in partnership with Aspiration and Digital Public. 
 
 ## Call for Participation
 
@@ -16,6 +16,8 @@ As civil society moves to increasingly data-centric and data-driven modes of doi
 New types of leaders are emerging to meet these challenges, but few resources are available to inform governance, stewardship and long-term responsible leadership in data-centric missions and ventures.
 
 **Aspiration, Digital Public, and Fenris are announcing the Data Leadership Cohort (DLC), an opportunity for these leaders to meet, learn, and build networks with each other.**
+
+The first-ever **Data Leadership Cohort** will provide an opportunity for emerging data leaders to meet, learn, and build connections with each other as they work through challenges and opportunities in governing data resources, designing data-intensive platforms, and procuring data systems. This group will explore Data Leadership in the broader context of Data Governance, recognizing that our work exists in an ecosystem. The cohort will employ a co-learning framework refined over the last 15 years.
 
 This is a small-group format for a practice-oriented peer learning group of 8-12 individuals. Over the course of 8 weeks, the group will prototype structures and processes for effective data governance by workshopping each other’s real-world cases. 
 
@@ -30,4 +32,4 @@ https://aspirationtech.org/programs/leadership/data
 
 [Digital Public](https://www.digitalpublic.io/) is a public interest data governance firm. We help communities, companies, and institutions realize rights in, against, and through digital systems. 
 
-[Fenris](https://gofenris.com/) supports teams developing responsible data systems for public benefit through collaborative co-design of product strategy, equitable data governance, and targeted technical assistance.
+**Fenris** supports teams developing responsible data systems for public benefit through collaborative co-design of product strategy, equitable data governance, and targeted technical assistance.
