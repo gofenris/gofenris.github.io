@@ -39,7 +39,7 @@ enableRobotsTXT = true
   custom_css = ["assets/custom.css"] 
 
   # content display on home
-  recent_copy = "Recent Posts"
+  recent_copy = "Announcements"
   mainSections = ["post"]
   recent_posts_number = 3
   show_reading_time = false
