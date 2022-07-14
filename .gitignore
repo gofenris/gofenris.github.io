@@ -1,11 +1,23 @@
-## Hugo ##
+# File types #
+*.sw[opn]
+*.bkup
+*_bkup
+
+# Directories #
+logs/
+log/
+
+# Hugo #
 /public/
 /resources/_gen/
 
-## Vim / IDE ##
+# Vim / IDE #
 [._]*.sw[a-p]
 tags
 
-## Personal
+# Specific files #
+.project
+.vim
+.hugo_build.lock
 PROJECT_NOTE
 
