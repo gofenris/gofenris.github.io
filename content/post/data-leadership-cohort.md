@@ -23,10 +23,18 @@ The leaders partipating in the inaugural data leadership cohort were:
 * **Yotam Amit** -- The Movement Cooperative
 
 The cohort was organized and facilitated by
-* **Aman Ahuja** -- Founder, Fenris Network. [Fenris](https://gofenris.com) supports teams developing responsible data systems for public benefit through collaborative co-design of product strategy, equitable data governance, and targeted technical assistance.
-* **Sean McDonald** -- Co-founder, Digital Public. [Digital Public](https://www.digitalpublic.io/) is a public interest data governance firm. We help communities, companies, and institutions realize rights in, against, and through digital systems. 
-* **Allen Gunn** -- Executive Director, Aspiration. [Aspiration](https://aspirationtech.org/) connects nonprofit organizations, free and open source projects, philanthropic funders and activists with strategic frameworks, technology solutions, data skills that help them realize their missions.
+* **Aman Ahuja** -- Founder, Fenris Network. 
+* **Sean McDonald** -- Co-founder, Digital Public. 
+* **Allen Gunn** -- Executive Director, Aspiration. 
 
 You can find more information on each of the 2022 Data Leadership Cohort members on [Aspiration's program page](
 https://aspirationtech.org/programs/leadership/data/cohort/2022).
+
+## About the Organizers
+
+[Digital Public](https://www.digitalpublic.io/) is a public interest data governance firm. We help communities, companies, and institutions realize rights in, against, and through digital systems. 
+
+[Aspiration](https://aspirationtech.org/) connects nonprofit organizations, free and open source projects, philanthropic funders and activists with strategic frameworks, technology solutions, data skills that help them realize their missions.
+
+[Fenris](https://gofenris.com) supports teams developing responsible data systems for public benefit through collaborative co-design of product strategy, equitable data governance, and targeted technical assistance.
 
