@@ -33,8 +33,6 @@ enableRobotsTXT = true
       # images/fenris_logo_2ct_nb.png"
   description = "We are fenris: data initiatives for public benefit."
 
-  # Social: instagram, facebook, youtube, gitlab, mastodon, slack, stackoverflow, rss
-
   background_color_class = "bg-fa-blue"
   custom_css = ["assets/custom.css"] 
 
@@ -43,6 +41,25 @@ enableRobotsTXT = true
   mainSections = ["post"]
   recent_posts_number = 1
   show_reading_time = false
+
+  [[params.ananke_socials]]
+  # Social: instagram, facebook, youtube, gitlab, mastodon, slack, stackoverflow, rss
+  name = "github"
+  url = "https://github.com/gofenris/"
+
+[menu]
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "About"
+  identifier = "About"
+  weight = 200
+  url = "/#about"
+
 
 [sitemap] 
   changefreq = "monthly"
