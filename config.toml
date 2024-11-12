@@ -6,7 +6,7 @@ title = 'Fenris'
 theme = 'ananke'
 
 Paginate = 10
-googleAnalytics = ""
+# REMOVE googleAnalytics = ""
 enableRobotsTXT = true
 
 [taxonomies] 

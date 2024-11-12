@@ -5,7 +5,7 @@
     {{ .Title }}
   </h2>
 
-  <div class="center fa-light-gray pt3 pb0 tc-l measure-wide">
+  <div class="center fa-light-gray tc-l measure-wide">
     <section class="f4 lh-copy">
       {{ .Content }}
     </section>
@@ -13,22 +13,24 @@
 
   <div class="mw8 center ph3-ns">
     <div class="cf ph2-ns flex justify-center">
-      {{ range first 3 (where .Site.RegularPages "Section" "about") }}
+      {{ range first 3 (where .Site.RegularPages "Section" "services") }}
       <div class="fl w-100 w-third-ns pa2">
-	<article class="bg-white br3 pa2 pa3-ns mv2 ba b--black-10">
-	  <div class="tc f6 b">
+
+	<article class="bg-white br3 pa2 pa3-ns mv2 ba b--black-10 h5 overflow-hidden">
+	  <div class="f6 b">
 	    <a href="{{ .Params.Link }}" class="fa-blue-d dim" style="text-decoration:none;">
 	      {{ .Title }}</a>
 	  </div>
 
-	  <hr class="mw3 bb bw1 b--black-10">
-
-	  <p class="lh-copy black-70 f6 tc">
-	    {{ .Description }}<br>
-	    <a href="{{ .Params.Link }}" class="fa-red-d dim" style="text-decoration:none;">
-		{{ .Params.linktitle }}</a>
-	  </p>
+    <div class="flex-auto">
+      <p class="lh-copy black-70 f6 truncate-lines overflow-hidden">
+        {{ .Summary }}<br>
+        <a href="{{ .Params.Link }}" class="fa-red-d dim" style="text-decoration:none;">
+      {{ .Params.linktitle }}</a>
+      </p>
+    </div>
 	</article>
+
       </div>
       {{ end }} 
     </div>

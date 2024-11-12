@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Who we are"
 description: "Fenris enables teams through collaborative co-design of product strategy, equitable data governance, and targeted technical assistance."
 ---
 
