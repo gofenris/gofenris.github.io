@@ -42,9 +42,9 @@
 
 {{/* Section */}}
 {{ with .Site.GetPage "/about-section" }} 
-    {{ partial "section-about.html" . }}
+    {{ partial "section-b.html" . }}
+    {{/* disabled temporarily : partial "section-about.html" . */}}
 {{ end }}
-
 
 {{/* Section */}}
 {{ with .Site.GetPage "/logo-section" }} 
