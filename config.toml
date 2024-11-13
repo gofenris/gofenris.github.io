@@ -47,14 +47,14 @@ enableRobotsTXT = true
   name = "github"
   url = "https://github.com/gofenris/"
 
-[menu]
-  [[menu.main]]
+[menus]
+  [[menus.main]]
   name = "Home"
   identifier = "home"
   weight = 100
   url = "/"
 
-  [[menu.main]]
+  [[menus.main]]
   name = "About"
   identifier = "About"
   weight = 200
