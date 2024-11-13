@@ -1,31 +1,24 @@
 baseURL = 'https://gofenris.com/'
-languageCode = 'en-us'
 title = 'Fenris'
 
-# Theme ananke, modified
+# Theme ananke
 theme = 'ananke'
 
-Paginate = 10
-# REMOVE googleAnalytics = ""
+# options
 enableRobotsTXT = true
+
+languageCode = 'en-us'
+# defaultContentLanguage = "en"
+# sectionPagesMenu = "main"
+
+[pagination]
+pagerSize = 5
 
 [taxonomies] 
   category = "categories" 
 
-[menu]
-  [[menu.main]]
-  name = "Home"
-  identifier = "home"
-  weight = 100
-  url = "/"
-
-  [[menu.main]]
-  name = "About"
-  identifier = "About"
-  weight = 200
-  url = "/#about"
-
 [params]
+  # text_color = ""
   favicon = true
   author = "Aman Ahuja"
   site_logo = "/images/fenris/fenris_logo_2a_t_small2.png"
