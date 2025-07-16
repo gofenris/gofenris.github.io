@@ -24,6 +24,9 @@
           <h2 class="mid-gray pv2 tc">
             {{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}
           </h2>
+          <p class="f5 mid-gray tc measure center">
+            Occasional updates on our work in public-interest data design, partnerships, and systems change.
+          </p>
         {{ end }}
 
       {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
