@@ -1,6 +1,6 @@
 # July 2025 Site Refresh Tasks
 
-- [ ] **Add "More about me" link**
+- [X] **Add "More about me" link**
   - Add button/link under main mission statement linking to amanahuja.me
   - Alternative: "Read more at amanahuja.me" below About section
   - Goal: Provide obvious off-site link to reduce bounce rate
@@ -21,7 +21,7 @@
   - Find and download logos with transparent backgrounds
   - Maintain "flex items-center justify-around" layout
 
-- [ ] **Update "Who we are" section copy**
+- [X] **Update "Who we are" section copy**
   - Current text feels redundant with updated homepage content
   - Change to speak about our network approach instead of repeating mission
   - Goal: Differentiate section content and highlight collaborative model
