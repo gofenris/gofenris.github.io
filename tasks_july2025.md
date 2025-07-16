@@ -11,7 +11,7 @@
   - Add subtitle: "Occasional updates on our work in public-interest data design, partnerships, and systems change."
   - Framing: Implies embedded in real work, not theorizing from distance
 
-- [ ] **Add clarity around what we do**
+- [X] **Add clarity around what we do**
   - Update first section with "We understand..." 
   - Add: "Helping teams design responsible, high-impact data systems."
   - Goal: Clarify what we do vs. what we stand for
