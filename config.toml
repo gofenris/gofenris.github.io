@@ -31,7 +31,7 @@ pagerSize = 5
 
   # content display on home
   recent_copy = "Notes from the Field"
-  mainSections = ["post"]
+  mainSections = ["notes"]
   recent_posts_number = 1
   show_reading_time = false
 
