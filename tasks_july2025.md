@@ -15,3 +15,13 @@
   - Update first section with "We understand..." 
   - Add: "Helping teams design responsible, high-impact data systems."
   - Goal: Clarify what we do vs. what we stand for
+
+- [ ] **Add logos to client and partners section**
+  - Add WRI and World Bank logos
+  - Find and download logos with transparent backgrounds
+  - Maintain "flex items-center justify-around" layout
+
+- [ ] **Fix mobile padding bug**
+  - Fix padding/margin for first article section below hero
+  - Section with "we understand what it takes" text
+  - Issue occurs in mobile view only
