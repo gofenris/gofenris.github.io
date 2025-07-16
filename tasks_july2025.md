@@ -1,0 +1,17 @@
+# July 2025 Site Refresh Tasks
+
+- [ ] **Add "More about me" link**
+  - Add button/link under main mission statement linking to amanahuja.me
+  - Alternative: "Read more at amanahuja.me" below About section
+  - Goal: Provide obvious off-site link to reduce bounce rate
+
+- [ ] **Rename "Posts" to "Notes from the Field"**
+  - Change section header from "Posts" to "Notes from the Field" or "Dispatches"
+  - Update: `<h2 class="mid-gray pv2 tc">Posts</h2>`
+  - Add subtitle: "Occasional updates on our work in public-interest data design, partnerships, and systems change."
+  - Framing: Implies embedded in real work, not theorizing from distance
+
+- [ ] **Add clarity around what we do**
+  - Update first section with "We understand..." 
+  - Add: "Helping teams design responsible, high-impact data systems."
+  - Goal: Clarify what we do vs. what we stand for
