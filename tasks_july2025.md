@@ -26,7 +26,7 @@
   - Change to speak about our network approach instead of repeating mission
   - Goal: Differentiate section content and highlight collaborative model
 
-- [ ] **Fix mobile padding bug**
+- [X] **Fix mobile padding bug**
   - Fix padding/margin for first article section below hero
   - Section with "we understand what it takes" text
   - Issue occurs in mobile view only
