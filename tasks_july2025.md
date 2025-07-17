@@ -16,10 +16,15 @@
   - Add: "Helping teams design responsible, high-impact data systems."
   - Goal: Clarify what we do vs. what we stand for
 
-- [ ] **Add logos to client and partners section**
+- [X] **Add logos to client and partners section**
   - Add WRI and World Bank logos
   - Find and download logos with transparent backgrounds
   - Maintain "flex items-center justify-around" layout
+
+- [X] **Create new post/note**
+  - Write and publish a new "Notes from the Field" post
+  - Add to content/notes/ directory
+  - Goal: Fresh content to showcase updated site sections
 
 - [X] **Update "Who we are" section copy**
   - Current text feels redundant with updated homepage content
