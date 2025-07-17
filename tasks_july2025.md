@@ -21,6 +21,11 @@
   - Find and download logos with transparent backgrounds
   - Maintain "flex items-center justify-around" layout
 
+- [ ] **Create new post/note**
+  - Write and publish a new "Notes from the Field" post
+  - Add to content/notes/ directory
+  - Goal: Fresh content to showcase updated site sections
+
 - [X] **Update "Who we are" section copy**
   - Current text feels redundant with updated homepage content
   - Change to speak about our network approach instead of repeating mission
