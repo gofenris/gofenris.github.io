@@ -30,8 +30,8 @@ pagerSize = 5
   custom_css = ["assets/custom.css"] 
 
   # content display on home
-  recent_copy = "Posts"
-  mainSections = ["post"]
+  recent_copy = "Notes from the Field"
+  mainSections = ["notes"]
   recent_posts_number = 1
   show_reading_time = false
 

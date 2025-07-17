@@ -34,6 +34,10 @@
 .bg-fa-blue-l { background-color: #3b5d81; }
 .bg-fa-blue-d { background-color: #000d2b; }
 
+.hover-bg-fa-blue-d:hover { background-color: #000d2b; }
+
+.b--fa-blue { border-color: #043454; }
+
 
 .truncate-lines {
   /* this adds multi-line truncation */
