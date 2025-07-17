@@ -16,7 +16,7 @@
   - Add: "Helping teams design responsible, high-impact data systems."
   - Goal: Clarify what we do vs. what we stand for
 
-- [ ] **Add logos to client and partners section**
+- [X] **Add logos to client and partners section**
   - Add WRI and World Bank logos
   - Find and download logos with transparent backgrounds
   - Maintain "flex items-center justify-around" layout
