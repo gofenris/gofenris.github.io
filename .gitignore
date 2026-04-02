@@ -6,6 +6,7 @@
 # Directories #
 logs/
 log/
+.llm/
 
 # Hugo #
 /public/
