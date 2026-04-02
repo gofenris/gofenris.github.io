@@ -4,6 +4,9 @@
     &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
   </a>
     <div>{{ partialCached "social/follow.html" . }}</div>
-    <div><a href="/privacy-policy" class="link underline moon-gray">Privacy Policy</a></div>
+    <div class="flex gap-2">
+      <a href="https://client.gofenris.com" class="link underline moon-gray mr3">Partner Portal</a>
+      <a href="/privacy-policy" class="link underline moon-gray">Privacy Policy</a>
+    </div>
   </div>
 </footer>

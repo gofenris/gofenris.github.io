@@ -53,6 +53,12 @@ pagerSize = 5
   weight = 200
   url = "/#about"
 
+  [[menus.main]]
+  name = "Partner Portal"
+  identifier = "partner-portal"
+  weight = 300
+  url = "https://client.gofenris.com"
+
 
 [sitemap] 
   changefreq = "monthly"
