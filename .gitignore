@@ -7,6 +7,7 @@
 logs/
 log/
 .llm/
+.agents/
 
 # Hugo #
 /public/
