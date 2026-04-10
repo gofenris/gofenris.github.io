@@ -1,7 +1,38 @@
 {{ define "main" }}
-<article class="cf pa3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-  {{ .Content }}
-</article>
+
+{{/* Opening block + body copy: mw8 container */}}
+<div class="pa3 ph4-l pt4-l center mw8">
+
+  {{/* Lede: left-anchored in ~60% column */}}
+  <div class="w-80-l w-100 pr5-l pb3">
+    <p class="f6 ttu tracked fa-blue-l mb2 mt0">we are fenris</p>
+    <h1 class="f2 f1-l fw6 fa-blue lh-title mt0 mb4">
+      We help teams design, build, and sustain data products that serve the public good.
+    </h1>
+  </div>
+
+  {{/* Body copy: two equal columns on large screens */}}
+  <div class="cf f4 tl lh-copy mid-gray pv3 bt b--black-10">
+    <div class="fn fl-l w-50-l pr4-l col-body">
+      {{ .Params.col1 | markdownify }}
+    </div>
+    <div class="fn fl-l w-50-l">
+      {{ range .Params.services }}
+      <div class="service-card bg-white pa3 mb3 lh-copy">
+        {{ .body | markdownify }}
+      </div>
+      {{ end }}
+      <a href="/services" class="f5 fa-red hover-fa-red-d no-underline tl db mt1">Our services &rarr;</a>
+    </div>
+  </div>
+
+</div>
+
+  <article class="f4 tl lh-copy mid-gray">
+    {{ .Content }}
+  </article>
+
+</div>
 
 {{/* Section on Posts */}}
 
