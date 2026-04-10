@@ -1,9 +1,9 @@
 {{ define "main" }}
 
-{{/* Opening block + body copy: mw8 container */}}
-<div class="pa3 ph4-l pt4-l center mw8">
+{{/* 1. Opening block + body copy + service cards — light gray (page default) */}}
+<div class="pa3 ph4-l pt4-l pb5-l center mw8">
 
-  {{/* Lede: left-anchored in ~60% column */}}
+  {{/* Lede: left-anchored */}}
   <div class="w-80-l w-100 pr5-l pb3">
     <p class="f6 ttu tracked fa-blue-l mb2 mt0">we are fenris</p>
     <h1 class="f2 f1-l fw6 fa-blue lh-title mt0 mb4">
@@ -11,7 +11,7 @@
     </h1>
   </div>
 
-  {{/* Body copy: two equal columns on large screens */}}
+  {{/* Two-column: prose left, service cards right */}}
   <div class="cf f4 tl lh-copy mid-gray pv3 bt b--black-10">
     <div class="fn fl-l w-50-l pr4-l col-body">
       {{ .Params.col1 | markdownify }}
@@ -28,70 +28,43 @@
 
 </div>
 
-  <article class="f4 tl lh-copy mid-gray">
-    {{ .Content }}
-  </article>
+{{/* 2. Notes from the Field — white background */}}
+{{ $section := where .Site.RegularPages "Section" "in" .Site.MainSections }}
+{{ $sortedSection := sort $section "Date" "desc" }}
+{{ $section_count := len $sortedSection }}
 
-</div>
-
-{{/* Section on Posts */}}
-
-
-	{{/* Get the main sections for recent posts */}}
-	{{ $section := where .Site.RegularPages "Section" "in" .Site.MainSections }}
-	{{/* Sort the posts by date in descending order to get the most recent ones first */}}
-	{{ $sortedSection := sort $section "Date" "desc" }}
-
-  {{/* Check to see if the section is defined for ranging through it */}}
-  {{ $section_count := len $sortedSection }}
-
-  {{ if ge $section_count 1 }}
-    {{/* Derive the section name  */}}
-    {{ $section_name := index .Site.MainSections 0 }}
-
-    <div id="section-recent" class="w-100 mw9 pa3 pa4-ns center">
-       {{/* Display recent posts if section exists */}}
-       {{ with .Site.GetPage "section" $section_name }}
-          <h2 class="mid-gray pv2 tc">
-            {{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}
-          </h2>
-          <p class="f5 mid-gray tc measure center">
-            Occasional updates on our work in public-interest data design, partnerships, and systems change.
-          </p>
-        {{ end }}
-
+{{ if ge $section_count 1 }}
+  {{ $section_name := index .Site.MainSections 0 }}
+  <div id="section-recent" class="bg-white w-100 pv5 ph3 ph4-l">
+    <div class="mw8 center">
+      {{ with .Site.GetPage "section" $section_name }}
+        <p class="f6 ttu tracked fa-blue-l mb2 mt0">{{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}</p>
+      {{ end }}
       {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
-
-      <section class="w-100 mw8 center">
-        {{/* Range through the first $n_posts items of the section */}}
-        {{ range (first $n_posts $sortedSection) }}
-          <div class="relative mb4 measure-wide center">
-            {{ .Render "summary-with-image" }}
-          </div>
-        {{ end }}
-      </section>
-
-      </div>
-  {{ end }}
-
-{{/* Section */}}
-{{ with .Site.GetPage "/about-section" }} 
-    {{ partial "section-b.html" . }}
-    {{/* disabled temporarily : partial "section-about.html" . */}}
+      {{ range (first $n_posts $sortedSection) }}
+        <div class="relative mb4">
+          {{ .Render "summary-with-image" }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
 {{ end }}
 
-{{/* Section */}}
-{{ with .Site.GetPage "/logo-section" }} 
-  <div class="pa3 pa4-ns w-100 mw9 center">
+{{/* 3. Who We Are + How We Work — white container, two colored boxes */}}
+{{ with .Site.GetPage "/about-section" }}
+  {{ partial "who-we-work.html" . }}
+{{ end }}
+
+{{/* 4. Clients & Partners — light gray (page default) */}}
+{{ with .Site.GetPage "/logo-section" }}
+  <div class="pa3 pa5-l w-100 mw9 center">
     {{ partial "logo-section.html" . }}
   </div>
 {{ end }}
 
-{{/* Section on Contact Form */}}
-<div id="contact-form" class="cf pa3 pa4-m pa5-l mw9 center mid-gray">
-
-  {{/* general-contact-form action="https://formspree.io/f/mbjwdkpb" */}}
+{{/* 5. Contact form — white background */}}
+<div id="contact-form" class="bg-white cf pa3 pa4-m pa5-l mw9 center mid-gray">
   {{ partial "general-contact-form.html" . }}
-
 </div>
-{{ end }} 
+
+{{ end }}

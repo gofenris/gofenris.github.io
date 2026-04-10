@@ -1,0 +1,33 @@
+<div class="bg-white pv5 ph3 ph4-l">
+  <div class="mw8 center">
+
+    <div class="cf">
+
+      {{/* Left box: Who We Are — light gray */}}
+      <div class="fn fl-l w-50-l pr3-l mb4 mb0-l">
+        <div class="bg-fa-light-gray pa4 pa5-l h-100">
+          <p class="f6 ttu tracked fa-blue mb3 mt0">Who We Are</p>
+          <div class="f4 lh-copy fa-dark-gray">
+            {{ .Content }}
+          </div>
+          <a href="https://amanahuja.me" class="f5 fa-blue hover-fa-blue-d no-underline" target="_blank" rel="noopener">
+            Aman Ahuja &rarr;
+          </a>
+        </div>
+      </div>
+
+      {{/* Right box: How We Work — dark navy */}}
+      <div class="fn fl-l w-50-l pl3-l">
+        <div class="bg-fa-blue pa4 pa5-l h-100">
+          {{ with $.Page.Site.GetPage "/how-we-work" }}
+            <p class="f6 ttu tracked white-50 mb3 mt0">{{ .Title }}</p>
+            <div class="f4 lh-copy white-90 how-we-work-content">
+              {{ .Content }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
