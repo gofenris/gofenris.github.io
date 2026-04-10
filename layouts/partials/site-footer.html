@@ -1,12 +1,48 @@
-<footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.Home.Permalink }}" >
-    &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
-  </a>
-    <div>{{ partialCached "social/follow.html" . }}</div>
-    <div class="flex gap-2">
-      <a href="https://client.gofenris.com" class="link underline moon-gray mr3">Partner Portal</a>
-      <a href="/privacy-policy" class="link underline moon-gray">Privacy Policy</a>
+<footer class="{{ .Site.Params.background_color_class | default "bg-black" }} w-100" role="contentinfo">
+
+  {{/* Row 1: main footer content */}}
+  <div class="cf pa4 pa5-l mw9 center">
+
+    {{/* Left column: mission statement (~50%) */}}
+    <div class="fl w-100 w-50-l pr5-l mb4 mb0-l">
+      <div class="f4 fw6 white mb3">fenris</div>
+      <p class="f5 lh-copy white-70 measure mb3">
+        Fenris is a network of practitioners working on data initiatives for public benefit.
+        We help mission-driven teams design, build, and sustain responsible data systems.
+      </p>
+      <a href="/manifesto" class="f5 fa-red hover-white no-underline">
+        Read our Manifesto &rarr;
+      </a>
     </div>
+
+    {{/* Middle column: Work links (~25%) */}}
+    <div class="fl w-50 w-25-l pr3-l">
+      <div class="f6 ttu tracked white-50 mb3">Explore</div>
+      <ul class="list pa0 ma0">
+        <li class="mb2"><a href="/#about" class="f5 white-70 hover-white no-underline">About</a></li>
+        <li class="mb2"><a href="/services" class="f5 white-70 hover-white no-underline">Services</a></li>
+        <li class="mb2"><a href="/notes" class="f5 white-70 hover-white no-underline">Notes</a></li>
+      </ul>
+    </div>
+
+    {{/* Right column: Connect links (~25%) */}}
+    <div class="fl w-50 w-25-l">
+      <div class="f6 ttu tracked white-50 mb3">Connect</div>
+      <ul class="list pa0 ma0">
+        <li class="mb2"><a href="https://github.com/gofenris" class="f5 white-70 hover-white no-underline" target="_blank" rel="noopener">GitHub</a></li>
+        <li class="mb2"><a href="/privacy-policy" class="f5 white-70 hover-white no-underline">Privacy Policy</a></li>
+        <li class="mb2"><a href="https://client.gofenris.com" class="f5 white-70 hover-white no-underline" target="_blank" rel="noopener">Partner Portal</a></li>
+        <li class="mt4"><a href="https://amanahuja.me" class="f5 white-70 hover-white no-underline" target="_blank" rel="noopener">Aman Ahuja</a></li>
+      </ul>
+    </div>
+
   </div>
+
+  {{/* Row 2: bottom bar */}}
+  <div class="flex justify-between items-center pa3 ph4-l bt b--white-10">
+    <span class="f6 white-50">
+      &copy; {{ now.Format "2006" }} {{ .Site.Title }}. Data initiatives for public benefit.
+    </span>
+  </div>
+
 </footer>
