@@ -47,11 +47,12 @@ pagerSize = 5
   weight = 100
   url = "/notes"
 
-  [[menus.main]]
-  name = "Services"
-  identifier = "services"
-  weight = 200
-  url = "/services"
+  # [[menus.main]]
+  # name = "Services"
+  # identifier = "services"
+  # weight = 200
+  # url = "/services"
+  # Services nav link commented out until page is ready
 
 
 [sitemap] 
