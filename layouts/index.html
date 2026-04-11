@@ -51,7 +51,7 @@
 {{ end }}
 
 {{/* 3. Who We Are + How We Work — white container, two colored boxes */}}
-{{ with .Site.GetPage "/about-section" }}
+{{ with .Site.GetPage "/home-section-about" }}
   {{ partial "who-we-work.html" . }}
 {{ end }}
 
@@ -59,7 +59,7 @@
 {{ partial "projects-section.html" . }}
 
 {{/* 5. Clients & Partners — light gray (page default) */}}
-{{ with .Site.GetPage "/logo-section" }}
+{{ with .Site.GetPage "/home-section-logo" }}
   <div class="pa3 pa5-l w-100 mw9 center">
     {{ partial "logo-section.html" . }}
   </div>
