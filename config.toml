@@ -42,21 +42,15 @@ pagerSize = 5
 
 [menus]
   [[menus.main]]
-  name = "About"
-  identifier = "about"
-  weight = 100
-  url = "/#about"
-
-  [[menus.main]]
   name = "Notes"
   identifier = "notes"
-  weight = 200
+  weight = 100
   url = "/notes"
 
   [[menus.main]]
   name = "Services"
   identifier = "services"
-  weight = 300
+  weight = 200
   url = "/services"
 
 
