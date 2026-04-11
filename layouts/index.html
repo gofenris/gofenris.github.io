@@ -55,7 +55,10 @@
   {{ partial "who-we-work.html" . }}
 {{ end }}
 
-{{/* 4. Clients & Partners — light gray (page default) */}}
+{{/* 4. Recent Work — white background */}}
+{{ partial "projects-section.html" . }}
+
+{{/* 5. Clients & Partners — light gray (page default) */}}
 {{ with .Site.GetPage "/logo-section" }}
   <div class="pa3 pa5-l w-100 mw9 center">
     {{ partial "logo-section.html" . }}

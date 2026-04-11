@@ -69,6 +69,43 @@
   color: white;
 }
 
+/* Project accordion */
+.project-accordion {
+  border: 1px solid #043454;
+}
+
+.project-accordion > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+}
+
+.project-accordion > summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-accordion > summary::marker {
+  content: "";
+}
+
+.project-accordion > summary::after {
+  content: "›";
+  color: #043454;
+  font-size: 1.4rem;
+  line-height: 1;
+  display: inline-block;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.project-accordion[open] > summary::after {
+  transform: rotate(270deg);
+}
+
 .truncate-lines {
   /* this adds multi-line truncation */
   display: -webkit-box;

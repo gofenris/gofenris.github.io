@@ -42,22 +42,22 @@ pagerSize = 5
 
 [menus]
   [[menus.main]]
-  name = "Home"
-  identifier = "home"
-  weight = 100
-  url = "/"
-
-  [[menus.main]]
   name = "About"
-  identifier = "About"
-  weight = 200
+  identifier = "about"
+  weight = 100
   url = "/#about"
 
   [[menus.main]]
-  name = "Partner Portal"
-  identifier = "partner-portal"
+  name = "Notes"
+  identifier = "notes"
+  weight = 200
+  url = "/notes"
+
+  [[menus.main]]
+  name = "Services"
+  identifier = "services"
   weight = 300
-  url = "https://client.gofenris.com"
+  url = "/services"
 
 
 [sitemap] 
