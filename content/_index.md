@@ -8,7 +8,7 @@ col1: |
     That's why we partner with mission-driven teams focused on the lasting impact of their work. 
 
 services:
-  - body: "**Product strategy** to build actionable roadmaps that align product vision with implementation."
-  - body: "**Data governance** to address data sharing & ownership, sustainable funding models, and stakeholder alignment."
-  - body: "**Co-creating with technical teams** and mentoring product leads to deliver effectively."
+  - body: "**Product strategy** that bridges vision and execution. We navigate the complexity of priorities between executives, stakeholders, and builders to create a roadmap that's actionable."
+  - body: "**Data governance** addresses critical questions about ownership, sharing, and decision-making. When put in place from the start, it is a process that builds trust and rebalances power."
+  - body: "**Co-creating with technical teams** to deliver on critical value points. We structure engagements to empower your team to carry the work forward long-term."
 ---
