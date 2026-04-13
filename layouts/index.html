@@ -1,7 +1,8 @@
 {{ define "main" }}
 
 {{/* 1. Opening block + body copy + service cards — light gray (page default) */}}
-<div class="pa3 ph4-l pt4-l pb5-l center mw8">
+<div class="pt4-l pb5-l">
+<div class="mw8 center ph3 ph4-l">
 
   {{/* Lede: left-anchored */}}
   <div class="w-80-l w-100 pr5-l pb3">
@@ -28,6 +29,7 @@
   </div>
 
 </div>
+</div>
 
 {{/* 2. Notes from the Field — white background */}}
 {{ $section := where .Site.RegularPages "Section" "in" .Site.MainSections }}
@@ -36,16 +38,14 @@
 
 {{ if ge $section_count 1 }}
   {{ $section_name := index .Site.MainSections 0 }}
-  <div id="section-recent" class="bg-white w-100 pv5 ph3 ph4-l">
-    <div class="mw8 center">
+  <div id="section-recent" class="bg-white w-100 pv5">
+    <div class="mw8 center ph3 ph4-l">
       {{ with .Site.GetPage "section" $section_name }}
-        <p class="f6 ttu tracked fa-blue-l mb2 mt0">{{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}</p>
+        <p class="f6 ttu tracked fa-blue-l mb2 mt0">Notes</p>
       {{ end }}
       {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
       {{ range (first $n_posts $sortedSection) }}
-        <div class="relative mb4">
-          {{ .Render "summary-with-image" }}
-        </div>
+        {{ .Render "summary" }}
       {{ end }}
     </div>
   </div>
@@ -61,14 +61,18 @@
 
 {{/* 5. Clients & Partners — light gray (page default) */}}
 {{ with .Site.GetPage "/home-section-logo" }}
-  <div class="pa3 pa5-l w-100 mw9 center">
-    {{ partial "logo-section.html" . }}
+  <div class="pv5">
+    <div class="mw8 center ph3 ph4-l">
+      {{ partial "logo-section.html" . }}
+    </div>
   </div>
 {{ end }}
 
 {{/* 5. Contact form — white background */}}
-<div id="contact-form" class="bg-white cf pa3 pa4-m pa5-l mw9 center mid-gray">
-  {{ partial "general-contact-form.html" . }}
+<div id="contact-form" class="bg-white pv5 mid-gray">
+  <div class="mw8 center ph3 ph4-l">
+    {{ partial "general-contact-form.html" . }}
+  </div>
 </div>
 
 {{ end }}

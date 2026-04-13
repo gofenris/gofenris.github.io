@@ -26,13 +26,14 @@ pagerSize = 5
       # images/fenris_logo_2ct_nb.png"
   description = "We are fenris: data initiatives for public benefit."
 
+  body_classes = "avenir bg-white"
   background_color_class = "bg-fa-blue"
   custom_css = ["assets/custom.css"] 
 
   # content display on home
   recent_copy = "Notes from the Field"
   mainSections = ["notes"]
-  recent_posts_number = 1
+  recent_posts_number = 3
   show_reading_time = false
 
   [[params.ananke_socials]]
