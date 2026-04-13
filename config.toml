@@ -48,6 +48,12 @@ pagerSize = 5
   weight = 100
   url = "/notes"
 
+  [[menus.main]]
+  name = "Partner Portal"
+  identifier = "portal"
+  weight = 200
+  url = "https://client.gofenris.com/"
+
   # [[menus.main]]
   # name = "Services"
   # identifier = "services"
