@@ -223,12 +223,13 @@ main[role="main"] {
 
 .page-body a {
   color: #043454;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
 
 .page-body a:hover {
   color: #fb4b4b; /* fa-red */
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .page-body blockquote {
@@ -374,12 +375,13 @@ main[role="main"] {
 
 .manifesto-body a {
   color: #043454;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
 
 .manifesto-body a:hover {
   color: #fb4b4b;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .manifesto-body blockquote {
@@ -551,12 +553,13 @@ main[role="main"] {
 
 .note-body a {
   color: #043454;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
 
 .note-body a:hover {
   color: #fb4b4b; /* fa-red */
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .note-body blockquote {
@@ -578,3 +581,20 @@ main[role="main"] {
 }
 
 /* ─── End notes single post layout ─────────────────────────────────────────── */
+
+/* ─── Contact form ──────────────────────────────────────────────────────────── */
+
+.contact-blurb {
+  font-family: Georgia, "Times New Roman", ui-serif, serif;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: inset 3px 0 0 #043454;
+}
+
+/* ─── End contact form ───────────────────────────────────────────────────────── */
