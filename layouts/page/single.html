@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1">
+  {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
+  {{ with .Description }}<meta property="og:description" content="{{ . }}">{{ end }}
+  <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ hugo.Generator }}
+  {{ partial "site-style.html" . }}
+  {{ partial "site-scripts.html" . }}
+  {{ partialCached "site-favicon.html" . }}
+  {{ partial "head-additions.html" . }}
+</head>
+
+<body class="bg-white">
+
+  {{/* Stripped header: logo links home, breadcrumb on the right */}}
+  <header class="page-header mw7 center ph3 ph4-l pv3">
+    <div class="flex items-center justify-between">
+      <a href="{{ .Site.Home.RelPermalink }}" class="no-underline dib">
+        {{ with .Site.Params.site_logo }}
+          <img src="{{ relURL . }}" class="page-header-logo" alt="{{ $.Site.Title }}" />
+        {{ else }}
+          <span class="f4 fw6 fa-blue">{{ .Site.Title }}</span>
+        {{ end }}
+      </a>
+      <nav class="page-breadcrumb" aria-label="breadcrumb">
+        <a href="/" class="no-underline">home</a>
+        <span class="page-breadcrumb-sep">/</span>
+        <span>{{ .Title | lower }}</span>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <article class="page-article mw7 center ph3 ph4-l pv4 pv5-l">
+
+      <header class="page-post-header mb4">
+        <h1 class="page-title mt0 mb2">{{ .Title }}</h1>
+        {{ with .Description }}
+          <p class="page-description">{{ . }}</p>
+        {{ end }}
+      </header>
+
+      <div class="page-body">
+        {{ .Content }}
+      </div>
+
+    </article>
+  </main>
+
+  {{ partialCached "site-footer.html" . }}
+
+</body>
+</html>
