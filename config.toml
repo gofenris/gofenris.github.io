@@ -62,6 +62,9 @@ pagerSize = 5
   # Services nav link commented out until page is ready
 
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [sitemap] 
   changefreq = "monthly"
   priority = 0.5

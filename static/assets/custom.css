@@ -269,7 +269,158 @@ main[role="main"] {
 
 /* ─── End page layout ────────────────────────────────────────────────────────── */
 
+/* ─── Manifesto layout ──────────────────────────────────────────────────────── */
+
+/* TOC horizontal rules */
+.manifesto-rule {
+  border: none;
+  border-top: 1px solid #e1e2e1;
+  margin: 1.75rem 0;
+}
+
+/* Sticky block: title + TOC pins to top of viewport */
+.manifesto-sticky {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+/* TOC list */
+.manifesto-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.manifesto-toc-list li {
+  margin-bottom: 0.6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.manifesto-toc-list a {
+  color: #043454; /* fa-blue */
+  text-decoration: none;
+  display: inline;
+}
+
+.manifesto-toc-list a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Red number in TOC */
+.manifesto-toc-num {
+  color: #fb4b4b; /* fa-red */
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  margin-right: 0.5em;
+}
+
+/* Article body — same reading treatment as .page-body */
+.manifesto-body {
+  font-family: Georgia, "Times New Roman", ui-serif, serif;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.manifesto-body p {
+  margin-bottom: 1.4rem;
+}
+
+/* Principle headings — bold, fa-blue, 1.75rem */
+.manifesto-body h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #043454; /* fa-blue */
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 60em) {
+  .manifesto-body h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Red number span inside each h2 */
+.principle-num {
+  color: #fb4b4b; /* fa-red */
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  margin-right: 0.4em;
+  scroll-margin-top: 430px;
+}
+
+.manifesto-body h3,
+.manifesto-body h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #043454;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.manifesto-body h3 { font-size: 1rem; }
+.manifesto-body h4 { font-size: 0.9rem; }
+
+.manifesto-body a {
+  color: #043454;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.manifesto-body a:hover {
+  color: #fb4b4b;
+}
+
+.manifesto-body blockquote {
+  border-left: 3px solid #043454;
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  color: #526471;
+  font-style: italic;
+}
+
+.manifesto-body ul,
+.manifesto-body ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.manifesto-body li {
+  margin-bottom: 0.4rem;
+}
+
+.manifesto-body hr {
+  border: none;
+  border-top: 1px solid #e1e2e1;
+  margin: 2rem 0;
+}
+
+.manifesto-body em {
+  font-style: italic;
+}
+
+.manifesto-body strong {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* ─── End manifesto layout ───────────────────────────────────────────────────── */
+
 /* ─── Notes single post layout ─────────────────────────────────────────────── */
+
+/* Constrain article width for readability */
+.note-article {
   max-width: 680px;
 }
 
