@@ -26,13 +26,14 @@ pagerSize = 5
       # images/fenris_logo_2ct_nb.png"
   description = "We are fenris: data initiatives for public benefit."
 
+  body_classes = "avenir bg-white"
   background_color_class = "bg-fa-blue"
   custom_css = ["assets/custom.css"] 
 
   # content display on home
   recent_copy = "Notes from the Field"
   mainSections = ["notes"]
-  recent_posts_number = 1
+  recent_posts_number = 3
   show_reading_time = false
 
   [[params.ananke_socials]]
@@ -42,23 +43,27 @@ pagerSize = 5
 
 [menus]
   [[menus.main]]
-  name = "Home"
-  identifier = "home"
+  name = "Notes"
+  identifier = "notes"
   weight = 100
-  url = "/"
-
-  [[menus.main]]
-  name = "About"
-  identifier = "About"
-  weight = 200
-  url = "/#about"
+  url = "/notes"
 
   [[menus.main]]
   name = "Partner Portal"
-  identifier = "partner-portal"
-  weight = 300
-  url = "https://client.gofenris.com"
+  identifier = "portal"
+  weight = 200
+  url = "https://client.gofenris.com/"
 
+  # [[menus.main]]
+  # name = "Services"
+  # identifier = "services"
+  # weight = 200
+  # url = "/services"
+  # Services nav link commented out until page is ready
+
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 [sitemap] 
   changefreq = "monthly"

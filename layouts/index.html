@@ -1,66 +1,78 @@
 {{ define "main" }}
-<article class="cf pa3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-  {{ .Content }}
-</article>
 
-{{/* Section on Posts */}}
+{{/* 1. Opening block + body copy + service cards — light gray (page default) */}}
+<div class="pt4-l pb5-l">
+<div class="mw8 center ph3 ph4-l">
 
+  {{/* Lede: left-anchored */}}
+  <div class="w-80-l w-100 pr5-l pb3">
+    <p class="f6 ttu tracked fa-blue-l mb2 mt0">we are fenris</p>
+    <h1 class="f2 f1-l fw6 fa-blue lh-title mt0 mb4">
+      We help teams design, build, and sustain data products that serve the public good.
+    </h1>
+  </div>
 
-	{{/* Get the main sections for recent posts */}}
-	{{ $section := where .Site.RegularPages "Section" "in" .Site.MainSections }}
-	{{/* Sort the posts by date in descending order to get the most recent ones first */}}
-	{{ $sortedSection := sort $section "Date" "desc" }}
-
-  {{/* Check to see if the section is defined for ranging through it */}}
-  {{ $section_count := len $sortedSection }}
-
-  {{ if ge $section_count 1 }}
-    {{/* Derive the section name  */}}
-    {{ $section_name := index .Site.MainSections 0 }}
-
-    <div id="section-recent" class="w-100 mw9 pa3 pa4-ns center">
-       {{/* Display recent posts if section exists */}}
-       {{ with .Site.GetPage "section" $section_name }}
-          <h2 class="mid-gray pv2 tc">
-            {{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}
-          </h2>
-          <p class="f5 mid-gray tc measure center">
-            Occasional updates on our work in public-interest data design, partnerships, and systems change.
-          </p>
-        {{ end }}
-
-      {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
-
-      <section class="w-100 mw8 center">
-        {{/* Range through the first $n_posts items of the section */}}
-        {{ range (first $n_posts $sortedSection) }}
-          <div class="relative mb4 measure-wide center">
-            {{ .Render "summary-with-image" }}
-          </div>
-        {{ end }}
-      </section>
-
+  {{/* Two-column: prose left, service cards right */}}
+  <div class="cf f4 tl lh-copy mid-gray pv3 bt b--black-10">
+    <div class="fn fl-l w-50-l pr4-l col-body">
+      {{ .Params.col1 | markdownify }}
+    </div>
+    <div class="fn fl-l w-50-l">
+      {{ range .Params.services }}
+      <div class="service-card bg-white pa3 mb3 lh-copy">
+        {{ .body | markdownify }}
       </div>
-  {{ end }}
+      {{ end }}
+      {{/* <a href="/services" class="f5 fa-red hover-fa-red-d no-underline tl db mt1">Our services &rarr;</a> */}}
+      {{/* Services link commented out until page is ready */}}
+    </div>
+  </div>
 
-{{/* Section */}}
-{{ with .Site.GetPage "/about-section" }} 
-    {{ partial "section-b.html" . }}
-    {{/* disabled temporarily : partial "section-about.html" . */}}
-{{ end }}
+</div>
+</div>
 
-{{/* Section */}}
-{{ with .Site.GetPage "/logo-section" }} 
-  <div class="pa3 pa4-ns w-100 mw9 center">
-    {{ partial "logo-section.html" . }}
+{{/* 2. Notes from the Field — white background */}}
+{{ $section := where .Site.RegularPages "Section" "in" .Site.MainSections }}
+{{ $sortedSection := sort $section "Date" "desc" }}
+{{ $section_count := len $sortedSection }}
+
+{{ if ge $section_count 1 }}
+  {{ $section_name := index .Site.MainSections 0 }}
+  <div id="section-recent" class="bg-white w-100 pv4">
+    <div class="mw8 center ph3 ph4-l">
+      {{ with .Site.GetPage "section" $section_name }}
+        <p class="f6 ttu tracked fa-blue-l mb2 mt0">Notes</p>
+      {{ end }}
+      {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
+      {{ range (first $n_posts $sortedSection) }}
+        {{ .Render "summary" }}
+      {{ end }}
+    </div>
   </div>
 {{ end }}
 
-{{/* Section on Contact Form */}}
-<div id="contact-form" class="cf pa3 pa4-m pa5-l mw9 center mid-gray">
+{{/* 3. Who We Are + How We Work — white container, two colored boxes */}}
+{{ with .Site.GetPage "/home-section-who-we-are" }}
+  {{ partial "who-we-work.html" . }}
+{{ end }}
 
-  {{/* general-contact-form action="https://formspree.io/f/mbjwdkpb" */}}
-  {{ partial "general-contact-form.html" . }}
+{{/* 4. Recent Work — white background */}}
+{{/* {{ partial "projects-section.html" . }} */}}
 
+{{/* 5. Clients & Partners — light gray (page default) */}}
+{{ with .Site.GetPage "/home-section-logo" }}
+  <div class="pv4">
+    <div class="mw8 center ph3 ph4-l">
+      {{ partial "logo-section.html" . }}
+    </div>
+  </div>
+{{ end }}
+
+{{/* 5. Contact form — white background */}}
+<div id="contact-form" class="bg-white pv4 mid-gray">
+  <div class="mw8 center ph3 ph4-l">
+    {{ partial "general-contact-form.html" . }}
+  </div>
 </div>
-{{ end }} 
+
+{{ end }}

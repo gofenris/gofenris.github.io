@@ -1,0 +1,30 @@
+<div class="bg-white pv4">
+  <div class="mw8 center ph3 ph4-l">
+
+    <div class="cf">
+
+      {{/* Left box: Who We Are — light gray */}}
+      <div class="fn fl-l w-50-l pr3-l mb4 mb0-l">
+        <div class="bg-fa-light-gray pa4 pa5-l h-100">
+          <p class="f6 ttu tracked fa-blue mb3 mt0">Who We Are</p>
+          <div class="f4 lh-copy fa-dark-gray">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
+
+      {{/* Right box: How We Work — dark navy */}}
+      <div class="fn fl-l w-50-l pl3-l">
+        <div class="bg-fa-blue pa4 pa5-l h-100">
+          {{ with $.Page.Site.GetPage "/home-section-how-we-work" }}
+            <p class="f6 ttu tracked white-50 mb3 mt0">{{ .Title }}</p>
+            <div class="f4 lh-copy white-90 how-we-work-content">
+              {{ .Content }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

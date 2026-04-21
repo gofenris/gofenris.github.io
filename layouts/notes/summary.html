@@ -1,0 +1,10 @@
+<div class="bb b--black-10 pv3">
+  <div class="flex flex-column flex-row-l">
+    <div class="w-100 w-75-l">
+      <a href="{{ .RelPermalink }}" class="f4 fw6 fa-blue link dim no-underline db">{{ .Title }}</a>
+    </div>
+    <div class="w-100 w-25-l mid-gray f6 mt1 mt0-l tr-l">
+      {{ .Date | time.Format "02 January 2006" }}
+    </div>
+  </div>
+</div>

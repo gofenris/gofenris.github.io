@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1">
+  {{ with .Summary }}<meta name="description" content="{{ . | plainify }}">{{ end }}
+  {{ with .Summary }}<meta property="og:description" content="{{ . | plainify }}">{{ end }}
+  <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{ hugo.Generator }}
+  {{ partial "site-style.html" . }}
+  {{ partial "site-scripts.html" . }}
+  {{ partialCached "site-favicon.html" . }}
+  {{ partial "head-additions.html" . }}
+</head>
+
+<body class="bg-white">
+
+  {{/* Stripped header: logo links home, breadcrumb nav on the right */}}
+  <header class="note-header mw7 center ph3 ph4-l pv3">
+    <div class="flex items-center justify-between">
+      <a href="{{ .Site.Home.RelPermalink }}" class="no-underline dib">
+        {{ with .Site.Params.site_logo }}
+          <img src="{{ relURL . }}" class="note-header-logo" alt="{{ $.Site.Title }}" />
+        {{ else }}
+          <span class="f4 fw6 fa-blue">{{ .Site.Title }}</span>
+        {{ end }}
+      </a>
+      <nav class="note-breadcrumb" aria-label="breadcrumb">
+        <a href="/" class="no-underline">home</a>
+        <span class="note-breadcrumb-sep">/</span>
+        <a href="/notes/" class="no-underline">notes</a>
+        <span class="note-breadcrumb-sep">/</span>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <article class="note-article mw7 center ph3 ph4-l pv4 pv5-l">
+
+      {{/* Post title and date */}}
+      <header class="note-post-header mb4">
+        <h1 class="note-title mt0 mb2">{{ .Title }}</h1>
+        <p class="note-date">{{ .Date | time.Format "02 January 2006" }}</p>
+      </header>
+
+      {{/* Optional table of contents — opt in with `toc: true` in front matter */}}
+      {{ if .Params.toc }}
+        {{ with .TableOfContents }}
+          <nav class="note-toc" aria-label="Table of contents">
+            <p class="note-toc-heading">Contents</p>
+            {{ . }}
+          </nav>
+        {{ end }}
+      {{ end }}
+
+      {{/* Article body */}}
+      <div class="note-body">
+        {{ .Content }}
+      </div>
+
+    </article>
+  </main>
+
+  {{ partialCached "site-footer.html" . }}
+
+</body>
+</html>

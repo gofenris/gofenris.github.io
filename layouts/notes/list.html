@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="pv5">
+  <div class="mw7 center ph3 ph4-l">
+
+    <h1 class="f3 fw6 fa-blue mt0 mb4">Notes</h1>
+
+    {{ range .Paginator.Pages }}
+      {{ .Render "summary" }}
+    {{ end }}
+
+  </div>
+</div>
+{{ end }}
