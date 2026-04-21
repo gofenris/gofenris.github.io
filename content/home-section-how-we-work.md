@@ -3,13 +3,12 @@ title: "How We Work"
 draft: false
 ---
 
-1. **We assemble the right team** shaped by the your needs. At each phase, our team draws from our practitioner network. 
+1. **We are a values-driven consultant network.** We care about who we work with and how. We care about the impact our work and our clients have in the world.
 
-2. **We co-design.** We work together with you to reach goals, and ensure shared understanding and continuity. 
+2. **Our clients are the experts.** Your organization and its stakeholders understand the problem space better than we ever will. We listen and learn before we propose, and center your team's excellence. 
 
-3. **We think long-term.** Governance, sustainability, and ownership are built into every engagement from the start. 
+3. **We build for the long term.** Governance, ownership, and sustainability are built into every engagement, not added later when something breaks.
 
-4. **We learn from you.** We know our clients are experts and we're here to bridge our experience with yours. 
+4. **We build capacity, not dependency.** The goal of every engagement is to leave your team stronger and more capable than when we arrived.
 
-5. **We stay until it works.** We stay engaged to ensure success in each implementation and planned roadmap.
-
+5. **We stay alongside you.** After the deep work is done, we provide a flexible advisory and mentoring period — usually working with the product lead — to support continuity, follow-through, and to learn from the work over time. 
