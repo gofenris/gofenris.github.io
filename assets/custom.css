@@ -35,9 +35,81 @@
 .bg-fa-blue-d { background-color: #000d2b; }
 
 .hover-bg-fa-blue-d:hover { background-color: #000d2b; }
+.hover-fa-blue-d:hover { color: #000d2b; }
+.hover-fa-red-d:hover { color: #c10023; }
+
+.service-card {
+  border-top: 1px solid #d0d0d0;
+  border-left: 1px solid #d0d0d0;
+  border-right: 2px solid #a0a8b0;
+  border-bottom: 2px solid #a0a8b0;
+}
 
 .b--fa-blue { border-color: #043454; }
 
+
+.col-body p:first-child {
+  margin-top: 0;
+}
+
+.how-we-work-content ol {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.how-we-work-content ol li {
+  margin-bottom: 1rem;
+}
+
+.how-we-work-content ol li:last-child {
+  margin-bottom: 0;
+}
+
+.how-we-work-content strong {
+  color: white;
+}
+
+/* Project accordion */
+.project-accordion {
+  border: 1px solid #043454;
+}
+
+.project-accordion > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+}
+
+.project-accordion > summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-accordion > summary::marker {
+  content: "";
+}
+
+.project-accordion > summary::after {
+  content: "›";
+  color: #043454;
+  font-size: 1.4rem;
+  line-height: 1;
+  display: inline-block;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.project-accordion[open] > summary::after {
+  transform: rotate(270deg);
+}
+
+/* Remove theme's default bottom padding on <main> — sections handle their own spacing */
+main[role="main"] {
+  padding-bottom: 0;
+}
 
 .truncate-lines {
   /* this adds multi-line truncation */
@@ -47,3 +119,482 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* ─── Page layout (manifesto, privacy, etc.) ───────────────────────────────── */
+
+/* Constrain article width for readability */
+.page-article {
+  max-width: 680px;
+}
+
+/* Stripped header: same max-width as article so they align */
+.page-header {
+  max-width: 680px;
+  border-bottom: none;
+}
+
+.page-header-logo {
+  height: 2rem;
+  width: auto;
+  display: block;
+}
+
+/* Breadcrumb nav */
+.page-breadcrumb {
+  font-size: 0.8rem;
+  color: #526471; /* fa-dark-gray */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.page-breadcrumb a {
+  color: #526471;
+  text-decoration: none;
+}
+
+.page-breadcrumb a:hover {
+  color: #043454; /* fa-blue */
+}
+
+.page-breadcrumb-sep {
+  margin: 0 0.35em;
+  color: #a0a8b0;
+}
+
+/* Page title */
+.page-title {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #043454; /* fa-blue */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media screen and (min-width: 60em) {
+  .page-title {
+    font-size: 2.25rem;
+  }
+}
+
+/* Optional description below title */
+.page-description {
+  font-size: 0.95rem;
+  color: #526471; /* fa-dark-gray */
+  font-style: italic;
+  margin: 0.25rem 0 0 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Article body — serif, generous line height */
+.page-body {
+  font-family: Georgia, "Times New Roman", ui-serif, serif;
+  font-size: 1.0625rem;  /* ~17px */
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.page-body p {
+  margin-bottom: 1.4rem;
+}
+
+.page-body h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #043454; /* fa-blue */
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+}
+
+.page-body h3,
+.page-body h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #043454;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.page-body h3 { font-size: 1rem; }
+.page-body h4 { font-size: 0.9rem; }
+
+.page-body a {
+  color: #043454;
+  text-decoration: none;
+}
+
+.page-body a:hover {
+  color: #fb4b4b; /* fa-red */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.page-body blockquote {
+  border-left: 3px solid #043454;
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  color: #526471;
+  font-style: italic;
+}
+
+.page-body ul,
+.page-body ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.page-body li {
+  margin-bottom: 0.4rem;
+}
+
+/* Horizontal rules — subtle section dividers */
+.page-body hr {
+  border: none;
+  border-top: 1px solid #e1e2e1;
+  margin: 2rem 0;
+}
+
+/* em (italic) in body */
+.page-body em {
+  font-style: italic;
+}
+
+/* strong */
+.page-body strong {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* ─── End page layout ────────────────────────────────────────────────────────── */
+
+/* ─── Manifesto layout ──────────────────────────────────────────────────────── */
+
+/* TOC horizontal rules */
+.manifesto-rule {
+  border: none;
+  border-top: 1px solid #e1e2e1;
+  margin: 1.75rem 0;
+}
+
+/* Sticky block: title + TOC pins to top of viewport */
+.manifesto-sticky {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+/* TOC list */
+.manifesto-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.manifesto-toc-list li {
+  margin-bottom: 0.6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.manifesto-toc-list a {
+  color: #043454; /* fa-blue */
+  text-decoration: none;
+  display: inline;
+}
+
+.manifesto-toc-list a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Red number in TOC */
+.manifesto-toc-num {
+  color: #fb4b4b; /* fa-red */
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  margin-right: 0.5em;
+}
+
+/* Article body — same reading treatment as .page-body */
+.manifesto-body {
+  font-family: Georgia, "Times New Roman", ui-serif, serif;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.manifesto-body p {
+  margin-bottom: 1.4rem;
+}
+
+/* Principle headings — bold, fa-blue, 1.75rem */
+.manifesto-body h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #043454; /* fa-blue */
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 60em) {
+  .manifesto-body h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Red number span inside each h2 */
+.principle-num {
+  color: #fb4b4b; /* fa-red */
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  margin-right: 0.4em;
+  scroll-margin-top: 430px;
+}
+
+.manifesto-body h3,
+.manifesto-body h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #043454;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.manifesto-body h3 { font-size: 1rem; }
+.manifesto-body h4 { font-size: 0.9rem; }
+
+.manifesto-body a {
+  color: #043454;
+  text-decoration: none;
+}
+
+.manifesto-body a:hover {
+  color: #fb4b4b;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.manifesto-body blockquote {
+  border-left: 3px solid #043454;
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  color: #526471;
+  font-style: italic;
+}
+
+.manifesto-body ul,
+.manifesto-body ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.manifesto-body li {
+  margin-bottom: 0.4rem;
+}
+
+.manifesto-body hr {
+  border: none;
+  border-top: 1px solid #e1e2e1;
+  margin: 2rem 0;
+}
+
+.manifesto-body em {
+  font-style: italic;
+}
+
+.manifesto-body strong {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+/* ─── End manifesto layout ───────────────────────────────────────────────────── */
+
+/* ─── Notes single post layout ─────────────────────────────────────────────── */
+
+/* Constrain article width for readability */
+.note-article {
+  max-width: 680px;
+}
+
+/* Stripped header: same max-width as article so they align */
+.note-header {
+  max-width: 680px;
+  border-bottom: none;
+}
+
+.note-header-logo {
+  height: 2rem;
+  width: auto;
+  display: block;
+}
+
+/* Breadcrumb nav */
+.note-breadcrumb {
+  font-size: 0.8rem;
+  color: #526471; /* fa-dark-gray */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.note-breadcrumb a {
+  color: #526471;
+  text-decoration: none;
+}
+
+.note-breadcrumb a:hover {
+  color: #043454; /* fa-blue */
+}
+
+.note-breadcrumb-sep {
+  margin: 0 0.35em;
+  color: #a0a8b0;
+}
+
+/* Post title */
+.note-title {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #043454; /* fa-blue */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media screen and (min-width: 60em) {
+  .note-title {
+    font-size: 2.25rem;
+  }
+}
+
+/* Date below title */
+.note-date {
+  font-size: 0.8rem;
+  color: #526471; /* fa-dark-gray */
+  font-style: italic;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Table of contents */
+.note-toc {
+  margin-bottom: 2.5rem;
+  padding: 1rem 1.25rem;
+  background-color: #f5f5f6; /* fa-light-gray */
+  border-left: 3px solid #043454; /* fa-blue */
+}
+
+.note-toc-heading {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #526471;
+  font-weight: 600;
+  margin: 0 0 0.6rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.note-toc nav ul,
+.note-toc ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.note-toc li {
+  margin-bottom: 0.3rem;
+  font-size: 0.875rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.note-toc a {
+  color: #043454;
+  text-decoration: none;
+}
+
+.note-toc a:hover {
+  text-decoration: underline;
+}
+
+/* Article body — serif, generous line height */
+.note-body {
+  font-family: Georgia, "Times New Roman", ui-serif, serif;
+  font-size: 1.0625rem;  /* ~17px — readable without being oversized */
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.note-body p {
+  margin-bottom: 1.4rem;
+}
+
+.note-body h2,
+.note-body h3,
+.note-body h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #043454;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+
+.note-body h2 { font-size: 1.25rem; }
+.note-body h3 { font-size: 1.05rem; }
+.note-body h4 { font-size: 0.95rem; }
+
+.note-body a {
+  color: #043454;
+  text-decoration: none;
+}
+
+.note-body a:hover {
+  color: #fb4b4b; /* fa-red */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.note-body blockquote {
+  border-left: 3px solid #043454;
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  color: #526471;
+  font-style: italic;
+}
+
+.note-body ul,
+.note-body ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.note-body li {
+  margin-bottom: 0.4rem;
+}
+
+/* ─── End notes single post layout ─────────────────────────────────────────── */
+
+/* ─── Contact form ──────────────────────────────────────────────────────────── */
+
+.contact-blurb {
+  font-family: Georgia, "Times New Roman", ui-serif, serif;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: inset 3px 0 0 #043454;
+}
+
+/* ─── End contact form ───────────────────────────────────────────────────────── */
