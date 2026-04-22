@@ -1,9 +1,10 @@
 ---
 title: "Manifesto"
-description: "What Fenris believes about data, power, and civil society."
+description: "What Fenris believes."
 type: manifesto
 draft: false
 ---
+{{/* NOTE: The TOC for this page is hardcoded in layouts/manifesto/single.html — update principle titles there when renaming items here. */}}
 
 Fenris is a values-driven network. The work we do is inseparable from what we believe about data, power, and who gets to benefit from both.
 
@@ -11,11 +12,13 @@ This is our attempt to say that clearly. We invite you to read it in the same sp
 
 ---
 
-## <span class="principle-num" id="principle-01">01</span> We work with teams we believe in.
+## <span class="principle-num" id="principle-01">01</span> Mission-driven work demands more, not less.
 
-We work with mission-driven teams seeking meaningful positive impact on the world, first and foremost. We are excited to work with on issues related to climate change, social justice, and more equitable outcomes. In many countries, including the USA, this means working with civil society organizations. We believe civil society needs a greater quality of strategic thinking, technical excellence, and governance expertise than is found in the private sector. 
+Organizations working on climate, justice, public health, and democratic participation are navigating genuine complexity with limited resources. The problem spaces shift as you work on them. Stakeholders have competing needs. There is no single metric that tells you whether you're on the right track.
 
-Being small, we do not write hard rules about this, but we're honest about our limits, and honest when something doesn't feel right. But we seek alignment, and we let it guide where we put our energy and how we price our work. 
+And yet these teams routinely fight uphill battles with vendors who don't understand their context, funders who want a product roadmap that fits a grant cycle, and "corporate social responsibility" partners who parachute in with private-sector playbooks that don't apply.
+
+These problems deserve the most experienced technical partners available — people who have worked in these environments, not people training on them.
 
 ---
 
@@ -43,19 +46,19 @@ Every product decision embeds assumptions about who matters and what is worth op
 
 ---
 
-## <span class="principle-num" id="principle-05">05</span> Beginner's mind.
+## <span class="principle-num" id="principle-05">05</span> Organizations need partners, not prescriptions.
 
-The mission-driven organization with whom we work and their stakeholders are the experts and do-ers. We as product strategists, technologists, and advisors are too often positioned with great authority and little accountability. 
+The story is familiar: they arrive, spend a few days learning the context, and produce deliverables and recommendations that surely solve the problem. The institutional knowledge in the room — the program staff who know why the last three efforts failed, the community relationships that took years to build, the hard-won understanding of what the stakeholders will and won't accept — gets noted and set aside.
 
-Expertise is often a liability. We are mindful of our assumptions, our predispositions. We come in humble. We listen first. We ask questions before we propose solutions. We do not give in to temptation or demands to "fix" before we know. 
+Their expertise is often a liability. The more confident an advisor is in their frameworks, the less likely they are to notice when those frameworks don't fit. The organizations doing the hardest work in civil society need partners who treat that mismatch as the first thing to investigate.
 
-We, too, benefit from a beginner's mindset. We learn from each engagement, from the true experts, from the way we work together, and we carry each lesson forward to the next.
+That requires genuine curiosity. Acknowledging their own predispositions. Being willing to revise their understanding mid-stream. It requires patience. It requires co-creation. 
 
 ---
 
 ## <span class="principle-num" id="principle-06">06</span> The consultant's job is to make themselves unnecessary.
 
-The goal of every engagement is to build the capacity, knowledge, and confidence that makes continued external support optional. To provide value to civil society, we want clients and the sector as a whole to gain expertise and experience. 
+Most consulting relationships are structured in ways that reward continued engagement, not organizational growth. The incentive to keep coming back — more workshops, more roadmaps, more check-ins — runs directly counter to what the organizations being served actually need: to understand their own problems clearly enough that they don't need outside help to solve them. Civil society as a whole gets stronger when expertise stays inside organizations, not when it walks out the door at the end of every engagement.
 
 This means sharing methods, not just delivering outputs. Co-creating so others see the process and the decisions along the way. Training the people who will carry the work forward, not just the people who commissioned it. Being honest when the answer is "you don't need us for this."
 
