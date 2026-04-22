@@ -64,7 +64,7 @@ This means sharing methods, not just delivering outputs. Co-creating so others s
 
 ---
 
-## <span class="principle-num" id="principle-07">07</span> A healthy democracy needs a strong civil society. We help strengthen it.
+## <span class="principle-num" id="principle-07">07</span> A healthy democracy needs a strong civil society. Let's be a part of that.
 
 A healthy democracy depends on a balance between three sectors: government, the private sector, and civil society. Civil society — nonprofits, NGOs, journalists, academics, and community organizations — works to hold that balance, often with limited resources and against significant headwinds, toward a world that is more safe, more fair, and more just.
 
@@ -74,11 +74,11 @@ To the extent that data — and the effective and responsible use of data — ha
 
 ---
 
-## <span class="principle-num" id="principle-08">08</span> Data and AI cause real harm. We work in this space anyway.
+## <span class="principle-num" id="principle-08">08</span> Data and AI cause real harm. We can't leave it to those who aren't paying attention.
 
 Algorithms, AI systems, and data-driven technologies have caused real harm — and continue to. They have been used to surveil communities without consent, to encode and amplify existing biases, to exploit individuals' most personal information for profit. They have violated the digital sovereignty of peoples and nations. They have concentrated power in the hands of those who already have it, often at the direct expense of those who don't — particularly marginalized and underrepresented communities.
 
-We work in this space anyway. But we don't look away from the contradiction. Building data systems and data tools within the context of these harms is a tension we carry into every engagement. It informs how we work, who we work with, and what we're willing to build.
+Building data systems and data tools within the context of these harms is a tension we carry into every engagement. It informs how we work, who we work with, and what we're willing to build.
 
 Data are rarely the solution to anything on their own. They are one tool among many. When data do provide value, it is because they are being used responsibly, by the right people, in service of the right goals, and with the consent of those affected.
 
