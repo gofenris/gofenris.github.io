@@ -4,7 +4,7 @@ description: "What Fenris believes."
 type: manifesto
 draft: false
 ---
-{{/* NOTE: The TOC for this page is hardcoded in layouts/manifesto/single.html — update principle titles there when renaming items here. */}}
+<!-- NOTE: The TOC for this page is hardcoded in layouts/manifesto/single.html — update principle titles there when renaming items here. -->
 
 Fenris is a values-driven network. The work we do is inseparable from what we believe about data, power, and who gets to benefit from both.
 

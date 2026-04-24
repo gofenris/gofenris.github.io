@@ -39,10 +39,7 @@
 .hover-fa-red-d:hover { color: #c10023; }
 
 .service-card {
-  border-top: 1px solid #d0d0d0;
-  border-left: 1px solid #d0d0d0;
-  border-right: 2px solid #a0a8b0;
-  border-bottom: 2px solid #a0a8b0;
+  border: 1px solid #e1e2e1;
 }
 
 .b--fa-blue { border-color: #043454; }
