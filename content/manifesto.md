@@ -38,7 +38,7 @@ We see the distribution of power as a lens that applies to everything we do — 
 
 ---
 
-## <span class="principle-num" id="principle-04">04</span> Technical excellence is inseparable from ethical accountability.
+## <span class="principle-num" id="principle-04">04</span> Technical excellence requires ethical accountability.
 
 There is a persistent fiction that technical decisions are neutral, separate from ethical choices. The choice of data model is technical. The choice of what to measure is ethical. The choice of infrastructure is technical. The choice of who can access it is ethical.
 
