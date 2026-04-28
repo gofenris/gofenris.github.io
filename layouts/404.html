@@ -1,0 +1,40 @@
+{{ define "head" }}
+<meta name="robots" content="noindex, nofollow">
+{{ partial "head-additions.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<div class="mw7 center ph3 ph4-l pv5 pv6-l">
+
+  <p class="f6 ttu tracked fa-red mb2">404</p>
+  <h1 class="f2 fw6 dark-gray mt0 mb3">Page not found</h1>
+
+  <p class="f4 lh-copy dark-gray measure mb2">
+    The URI you requested could not be found.
+  </p>
+  <p class="f5 lh-copy mid-gray measure mb5">
+    This page may have moved or been removed. If you followed a link from
+    another site, it may be out of date.
+  </p>
+
+  <div class="flex flex-wrap gap3">
+    <a href="/" class="f5 fw5 link ph3 pv2 mr3 mb3 bg-fa-blue white no-underline">
+      &larr; Back to gofenris.com
+    </a>
+    <a id="report-link" href="https://github.com/gofenris/gofenris.github.io/issues/new?title=Broken+link+report&body=I+found+a+broken+link+at:+https://gofenris.com/" class="f5 fw5 link ph3 pv2 mb3 ba b--moon-gray dark-gray no-underline" target="_blank" rel="noopener">
+      Report this broken link &rarr;
+    </a>
+  </div>
+
+</div>
+
+<script>
+  (function() {
+    var link = document.getElementById('report-link');
+    if (link) {
+      var url = window.location.href;
+      link.href = 'https://github.com/gofenris/gofenris.github.io/issues/new?title=Broken+link+report&body=' + encodeURIComponent('I found a broken link at: ' + url);
+    }
+  })();
+</script>
+{{ end }}
