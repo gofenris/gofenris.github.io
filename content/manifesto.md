@@ -38,7 +38,7 @@ We see the distribution of power as a lens that applies to everything we do — 
 
 ---
 
-## <span class="principle-num" id="principle-04">04</span> Technical excellence is inseparable from ethical accountability.
+## <span class="principle-num" id="principle-04">04</span> Technical excellence requires ethical accountability.
 
 There is a persistent fiction that technical decisions are neutral, separate from ethical choices. The choice of data model is technical. The choice of what to measure is ethical. The choice of infrastructure is technical. The choice of who can access it is ethical.
 
@@ -64,7 +64,15 @@ This means sharing methods, not just delivering outputs. Co-creating so others s
 
 ---
 
-## <span class="principle-num" id="principle-07">07</span> A healthy democracy needs a strong civil society. Let's be a part of that.
+## <span class="principle-num" id="principle-07">07</span> Software freedom is a civil society issue.
+
+Data systems built on proprietary foundations carry hidden dependencies: the organization's future is contingent on someone else's roadmap. For organizations working with vulnerable communities, this isn't abstract. Software that can be inspected, audited, and modified is a prerequisite for trust — and for safety. In those contexts, software freedoms may directly affect the rights of the people the organization serves.
+
+Free software are tools, communities, and a philosophy. They underscore a commitment to agency, to transparency, and to systems that can be understood and controlled by the people who depend on them. And although, like civil society itself, they have issues and complexities, we believe they are valuable resources worth championing.
+
+---
+
+## <span class="principle-num" id="principle-08">08</span> A healthy democracy needs a strong civil society. Let's be a part of that.
 
 A healthy democracy depends on a balance between three sectors: government, the private sector, and civil society. Civil society — nonprofits, NGOs, journalists, academics, and community organizations — works to hold that balance, often with limited resources and against significant headwinds, toward a world that is more safe, more fair, and more just.
 
@@ -74,7 +82,7 @@ To the extent that data — and the effective and responsible use of data — ha
 
 ---
 
-## <span class="principle-num" id="principle-08">08</span> Data and AI cause real harm. We can't leave it to those who aren't paying attention.
+## <span class="principle-num" id="principle-09">09</span> Data and AI cause real harm. We can't leave it to those who aren't paying attention.
 
 Algorithms, AI systems, and data-driven technologies have caused real harm — and continue to. They have been used to surveil communities without consent, to encode and amplify existing biases, to exploit individuals' most personal information for profit. They have violated the digital sovereignty of peoples and nations. They have concentrated power in the hands of those who already have it, often at the direct expense of those who don't — particularly marginalized and underrepresented communities.
 
