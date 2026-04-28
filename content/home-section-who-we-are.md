@@ -1,6 +1,9 @@
 ---
 title: "Who We Are"
 description: "Fenris enables teams through collaborative co-design of product strategy, equitable data governance, and targeted technical assistance."
+build:
+  render: never
+  list: never
 ---
 
 Founded by Aman Ahuja, Fenris is a network of independent practitioners who help civil society organizations use data and AI technologies effectively. 

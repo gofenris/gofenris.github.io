@@ -1,6 +1,9 @@
 ---
 title: "How We Work"
 draft: false
+build:
+  render: never
+  list: never
 ---
 
 1. **We are a values-driven consultant network.** We care about who we work with and how. We care about the impact our work and our clients have in the world.
