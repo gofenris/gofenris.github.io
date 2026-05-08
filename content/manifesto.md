@@ -4,7 +4,7 @@ description: "What Fenris believes."
 type: manifesto
 draft: false
 ---
-<!-- NOTE: The TOC for this page is hardcoded in layouts/manifesto/single.html — update principle titles there when renaming items here. -->
+<!-- NOTE: The TOC for this page is hardcoded in layouts/manifesto/single.html : update principle titles there when renaming items here. -->
 
 Fenris is a values-driven network. The work we do is inseparable from what we believe about data, power, and who gets to benefit from both.
 
@@ -18,25 +18,23 @@ Organizations working on climate, justice, public health, and democratic partici
 
 And yet these teams routinely fight uphill battles with vendors who don't understand their context, funders who want a product roadmap that fits a grant cycle, and "corporate social responsibility" partners who parachute in with private-sector playbooks that don't apply.
 
-Problems of this complexity deserve the most experienced technical partners available — people who have worked in these environments, not people training on them.
+Problems of this complexity deserve the most experienced technical partners available -- people who have worked in these environments, not people training on them.
 
 ---
 
 ## <span class="principle-num" id="principle-02">02</span> Organizations need partners, not prescriptions.
 
-The story is familiar: advisors arrive, spend a few days learning the context, and produce deliverables and recommendations that surely solve the problem. The institutional knowledge in the room — the program staff who know why the last three efforts failed, the community relationships that took years to build, the hard-won understanding of what the stakeholders will and won't accept — gets noted and set aside.
+The organizations doing the hardest work in civil society need partners who are willing to challenge their own predispositions and the frameworks that are familiar to them. Too often, that's not what they get.
 
-Their expertise is often a liability. The more confident an advisor is in their frameworks, the less likely they are to notice when those frameworks don't fit. The organizations doing the hardest work in civil society need partners who treat that mismatch as the first thing to investigate.
-
-That requires genuine curiosity. Acknowledging our own predispositions. Being willing to revise our understanding mid-stream. That requires patience. That requires co-creation. 
+That's what partnership really looks like: genuine curiosity at the start of every engagement. Treating the expertise already in the room -- the institutional knowledge, the community relationships, the hard-won understanding of what stakeholders will and won't accept -- as the starting point, not the reason things haven't worked yet. That requires patience. That requires collaboration. 
 
 ---
 
 ## <span class="principle-num" id="principle-03">03</span> We seek to address power imbalances.
 
-Power imbalances show up in product decisions — whose voice gets heard, whose needs get prioritized. They show up in data governance — who controls the data, who benefits, who decides what gets collected and deleted. They show up in the relationship between funder and implementer, consultant and client, system designer and the people the system affects.
+Power imbalances show up in product decisions: whose voice gets heard, whose needs get prioritized. They show up in data governance: who controls the data, who benefits, who decides what gets collected and deleted. They show up in the relationship between funder and implementer, consultant and client, system designer and the people the system affects.
 
-We see the distribution of power as a lens that applies to everything we do — not a compliance checkbox, but the substance of the question: whose interests does this system actually serve?
+We see the distribution of power as a lens that applies to everything we do. Addressing imbalances directly is not a compliance checkbox, but the substance of the question: whose interests does this system actually serve?
 
 ---
 
@@ -44,15 +42,15 @@ We see the distribution of power as a lens that applies to everything we do — 
 
 There is a persistent fiction that technical decisions are neutral, separate from ethical choices. The choice of data model is technical. The choice of what to measure is ethical. The choice of infrastructure is technical. The choice of who can access it is ethical.
 
-Every product decision embeds assumptions about who matters and what is worth optimizing for. Making those assumptions explicit — and subjecting them to the same scrutiny as the code and the UX design -- is part of what good technical work means.
+Every product decision embeds assumptions about who matters and what is worth optimizing for. Making those assumptions explicit, and subjecting them to the same scrutiny as the code and the UX design, is part of what good technical work means.
 
 ---
 
 ## <span class="principle-num" id="principle-05">05</span> Software freedom is a civil society issue.
 
-Data systems built on proprietary foundations carry hidden dependencies: the organization's future is contingent on someone else's roadmap. For organizations working with vulnerable communities, this isn't abstract. Software that can be inspected, audited, and modified is a prerequisite for trust — and for safety. In those contexts, software freedoms may directly affect the rights of the people the organization serves.
+Data systems built on proprietary foundations carry hidden dependencies: the organization's future is contingent on someone else's roadmap. For organizations working with vulnerable communities, this isn't abstract. Software that can be inspected, audited, and modified is a prerequisite for trust and for safety. In those contexts, software freedoms may directly affect the rights of the people the organization serves.
 
-Free software — free as in freedom, not price — represents tools, communities, and a philosophy. It underscores a commitment to agency, to transparency, and to systems that can be understood and controlled by the people who depend on them. And although, like civil society itself, it has issues and complexities, we believe it is a valuable resource worth championing.
+Free software (free as in freedom, not price) represents tools, communities, and a philosophy. It underscores a commitment to agency, to transparency, and to systems that can be understood and controlled by the people who depend on them. And although, like civil society itself, it has issues and complexities, we believe it is a valuable resource worth championing.
 
 ---
 
@@ -66,27 +64,19 @@ Data about people, their culture, and their beliefs requires long-term planning 
 
 ---
 
-## <span class="principle-num" id="principle-07">07</span> The consultant's job is to make themselves unnecessary.
+## <span class="principle-num" id="principle-07">07</span> A healthy democracy needs a strong civil society. Let's be a part of that.
 
-Most consulting relationships are structured in ways that reward continued engagement, not organizational growth. The incentive to keep coming back — more workshops, more roadmaps, more check-ins — runs directly counter to what the organizations being served actually need: to understand their own problems clearly enough that they don't need outside help to solve them. Civil society as a whole gets stronger when expertise stays inside organizations, not when it walks out the door at the end of every engagement.
-
-This means sharing methods, not just delivering outputs. Co-creating so others see the process and the decisions along the way. Training the people who will carry the work forward, not just the people who commissioned it. Being honest when the answer is "you don't need us for this."
-
----
-
-## <span class="principle-num" id="principle-08">08</span> A healthy democracy needs a strong civil society. Let's be a part of that.
-
-A healthy democracy depends on a balance between three sectors: government, the private sector, and civil society. Civil society — nonprofits, NGOs, journalists, academics, and community organizations — works to hold that balance, often with limited resources and against significant headwinds, toward a world that is more safe, more fair, and more just.
+A healthy democracy depends on a balance between three sectors: government, the private sector, and civil society. Civil society -- nonprofits, NGOs, journalists, academics, and community organizations -- works to hold that balance, often with limited resources and against significant headwinds, toward a world that is more safe, more fair, and more just.
 
 As Lucy Bernholz wrote in 2013: "Data are a resource like money. They are critical to success, unevenly distributed, and fundamental to the pursuit of privately resourced, public benefit activities. They are tools for reinforcing or redistributing power."
 
-To the extent that data — and the effective and responsible use of data — have a role to play in that balance, this is where Fenris seeks to serve.
+To the extent that data, and the effective and responsible use of data, have a role to play in that balance, this is where Fenris seeks to serve.
 
 ---
 
-## <span class="principle-num" id="principle-09">09</span> Data and AI cause real harm. We can't leave it to those who aren't paying attention.
+## <span class="principle-num" id="principle-08">08</span> Data and AI cause real harm. We can't leave it to those who aren't paying attention.
 
-Algorithms, AI systems, and data-driven technologies have caused real harm — and continue to. They have been used to surveil communities without consent, to encode and amplify existing biases, to exploit individuals' most personal information for profit. They have violated the digital sovereignty of peoples and nations. They have concentrated power in the hands of those who already have it, often at the direct expense of those who don't — particularly marginalized and underrepresented communities.
+Algorithms, AI systems, and data-driven technologies have caused real harm and continue to. They have been used to surveil communities without consent, to encode and amplify existing biases, to exploit individuals' most personal information for profit. They have violated the digital sovereignty of peoples and nations. They have concentrated power in the hands of those who already have it, often at the direct expense of those who don't -- particularly marginalized and underrepresented communities.
 
 Building data systems and data tools within the context of these harms is a tension we carry into every engagement. It informs how we work, who we work with, and what we're willing to build.
 
