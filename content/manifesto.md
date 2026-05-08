@@ -22,13 +22,13 @@ Problems of this complexity deserve the most experienced technical partners avai
 
 ---
 
-## <span class="principle-num" id="principle-02">02</span> Good work deserves to last.
+## <span class="principle-num" id="principle-02">02</span> Organizations need partners, not prescriptions.
 
-Too many important initiatives and so much good work in civil society never reach maturity. Too many initiatives are funded when they are new and exciting, and dropped when the press release will not generate enough clicks. Projects are killed by hostile funder takeovers, bad governance, or unclear leadership structures. 
+The story is familiar: advisors arrive, spend a few days learning the context, and produce deliverables and recommendations that surely solve the problem. The institutional knowledge in the room — the program staff who know why the last three efforts failed, the community relationships that took years to build, the hard-won understanding of what the stakeholders will and won't accept — gets noted and set aside.
 
-Sustainability should be intentionally integrated from day one. It means asking early: who maintains this when we're gone? What happens when the funder moves on? These are not post-launch questions. They determine whether the launch means anything.
+Their expertise is often a liability. The more confident an advisor is in their frameworks, the less likely they are to notice when those frameworks don't fit. The organizations doing the hardest work in civil society need partners who treat that mismatch as the first thing to investigate.
 
-Data about people, their culture, and their beliefs requires long-term planning that outlasts any single project. 
+That requires genuine curiosity. Acknowledging our own predispositions. Being willing to revise our understanding mid-stream. That requires patience. That requires co-creation. 
 
 ---
 
@@ -48,29 +48,29 @@ Every product decision embeds assumptions about who matters and what is worth op
 
 ---
 
-## <span class="principle-num" id="principle-05">05</span> Organizations need partners, not prescriptions.
-
-The story is familiar: advisors arrive, spend a few days learning the context, and produce deliverables and recommendations that surely solve the problem. The institutional knowledge in the room — the program staff who know why the last three efforts failed, the community relationships that took years to build, the hard-won understanding of what the stakeholders will and won't accept — gets noted and set aside.
-
-Their expertise is often a liability. The more confident an advisor is in their frameworks, the less likely they are to notice when those frameworks don't fit. The organizations doing the hardest work in civil society need partners who treat that mismatch as the first thing to investigate.
-
-That requires genuine curiosity. Acknowledging our own predispositions. Being willing to revise our understanding mid-stream. That requires patience. That requires co-creation. 
-
----
-
-## <span class="principle-num" id="principle-06">06</span> The consultant's job is to make themselves unnecessary.
-
-Most consulting relationships are structured in ways that reward continued engagement, not organizational growth. The incentive to keep coming back — more workshops, more roadmaps, more check-ins — runs directly counter to what the organizations being served actually need: to understand their own problems clearly enough that they don't need outside help to solve them. Civil society as a whole gets stronger when expertise stays inside organizations, not when it walks out the door at the end of every engagement.
-
-This means sharing methods, not just delivering outputs. Co-creating so others see the process and the decisions along the way. Training the people who will carry the work forward, not just the people who commissioned it. Being honest when the answer is "you don't need us for this."
-
----
-
-## <span class="principle-num" id="principle-07">07</span> Software freedom is a civil society issue.
+## <span class="principle-num" id="principle-05">05</span> Software freedom is a civil society issue.
 
 Data systems built on proprietary foundations carry hidden dependencies: the organization's future is contingent on someone else's roadmap. For organizations working with vulnerable communities, this isn't abstract. Software that can be inspected, audited, and modified is a prerequisite for trust — and for safety. In those contexts, software freedoms may directly affect the rights of the people the organization serves.
 
 Free software — free as in freedom, not price — represents tools, communities, and a philosophy. It underscores a commitment to agency, to transparency, and to systems that can be understood and controlled by the people who depend on them. And although, like civil society itself, it has issues and complexities, we believe it is a valuable resource worth championing.
+
+---
+
+## <span class="principle-num" id="principle-06">06</span> Good work deserves to last.
+
+Too many important initiatives and so much good work in civil society never reach maturity. Too many initiatives are funded when they are new and exciting, and dropped when the press release will not generate enough clicks. Projects are killed by hostile funder takeovers, bad governance, or unclear leadership structures. 
+
+Sustainability should be intentionally integrated from day one. It means asking early: who maintains this when we're gone? What happens when the funder moves on? These are not post-launch questions. They determine whether the launch means anything.
+
+Data about people, their culture, and their beliefs requires long-term planning that outlasts any single project. 
+
+---
+
+## <span class="principle-num" id="principle-07">07</span> The consultant's job is to make themselves unnecessary.
+
+Most consulting relationships are structured in ways that reward continued engagement, not organizational growth. The incentive to keep coming back — more workshops, more roadmaps, more check-ins — runs directly counter to what the organizations being served actually need: to understand their own problems clearly enough that they don't need outside help to solve them. Civil society as a whole gets stronger when expertise stays inside organizations, not when it walks out the door at the end of every engagement.
+
+This means sharing methods, not just delivering outputs. Co-creating so others see the process and the decisions along the way. Training the people who will carry the work forward, not just the people who commissioned it. Being honest when the answer is "you don't need us for this."
 
 ---
 
