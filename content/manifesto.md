@@ -22,7 +22,7 @@ Problems of this complexity deserve the most experienced technical partners avai
 
 ---
 
-## <span class="principle-num" id="principle-02">02</span> Sustainability is not an afterthought.
+## <span class="principle-num" id="principle-02">02</span> Good work deserves to last.
 
 Too many important initiatives and so much good work in civil society never reach maturity. Too many initiatives are funded when they are new and exciting, and dropped when the press release will not generate enough clicks. Projects are killed by hostile funder takeovers, bad governance, or unclear leadership structures. 
 
