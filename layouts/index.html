@@ -6,7 +6,7 @@
 
   {{/* Lede: left-anchored */}}
   <div class="w-80-l w-100 pr5-l pb3">
-    <p class="f6 ttu tracked fa-blue-l mb2 mt0">we are fenris</p>
+    <p class="f6 ttu tracked fa-blue-l mb2 mt0 eyebrow">we are fenris</p>
     <h1 class="f3 f2-m f1-l fw6 fa-blue lh-title mt0 mb4">
       We help teams design, build, and sustain data products that serve the public good.
     </h1>
@@ -41,7 +41,7 @@
   <div id="section-recent" class="bg-white w-100 pv4">
     <div class="mw8 center ph3 ph4-l">
       {{ with .Site.GetPage "section" $section_name }}
-        <p class="f6 ttu tracked fa-blue-l mb2 mt0">Notes</p>
+        <p class="f6 ttu tracked fa-blue-l mb2 mt0 eyebrow">Notes</p>
       {{ end }}
       {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
       {{ range (first $n_posts $sortedSection) }}

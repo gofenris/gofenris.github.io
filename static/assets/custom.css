@@ -47,6 +47,21 @@ html {
 }
 /* ─── End step E ──────────────────────────────────────────────────────────────── */
 
+/* ─── Step F: accent bar under section eyebrows ────────────────────────────────
+   Short red accent bar beneath the uppercase eyebrow labels (Qinara's divider
+   move, in the Fenris brand accent). Applied via an `eyebrow` class on the
+   section labels; the margin-bottom utility already on each label keeps the
+   spacing to the following content. */
+.eyebrow::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #fb4b4b; /* fa-red */
+  margin-top: 0.6rem;
+}
+/* ─── End step F ──────────────────────────────────────────────────────────────── */
+
 /*
   Additional colors added by AA 
   prefix `fa-`
