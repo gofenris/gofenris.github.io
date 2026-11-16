@@ -28,6 +28,25 @@
 }
 /* ─── End step G ──────────────────────────────────────────────────────────────── */
 
+/* ─── Step E: sticky frosted header ────────────────────────────────────────────
+   Header sticks to the top with a translucent frosted-glass background (no JS).
+   The old `bb b--black-10` hairline is removed in the template; separation comes
+   from the blur + whitespace. scroll-padding keeps in-page anchor jumps (Notes
+   TOC, Manifesto principles) from landing under the sticky bar. */
+html {
+  scroll-padding-top: 5rem;
+}
+
+.fenris-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
+}
+/* ─── End step E ──────────────────────────────────────────────────────────────── */
+
 /*
   Additional colors added by AA 
   prefix `fa-`
