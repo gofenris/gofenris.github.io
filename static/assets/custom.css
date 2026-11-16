@@ -41,7 +41,7 @@ html {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(251, 250, 247, 0.85);
   -webkit-backdrop-filter: saturate(180%) blur(12px);
   backdrop-filter: saturate(180%) blur(12px);
 }
@@ -684,3 +684,17 @@ main[role="main"] {
   letter-spacing: -0.025em;
 }
 /* ─── End step A ──────────────────────────────────────────────────────────────── */
+
+/* ─── Step D: barely-there warm white background ────────────────────────────────
+   Soften pure white to a very subtle warm off-white sitewide (no alternating
+   bands). Override Ananke's heavily-used `bg-white` utility plus the html
+   background so overscroll matches. The frosted header tint (step E) is warmed
+   to match. Revert by removing this block. */
+html {
+  background-color: #fbfaf7;
+}
+
+.bg-white {
+  background-color: #fbfaf7;
+}
+/* ─── End step D ──────────────────────────────────────────────────────────────── */
