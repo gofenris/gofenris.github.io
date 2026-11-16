@@ -1,4 +1,67 @@
 
+/* ─── Step G: wider, section-controlled layout ─────────────────────────────────
+   Widen the global frame (Ananke uses `mw8` = 64rem everywhere: header, sections,
+   footer, articles) and give sections more breathing room at the edges on large
+   screens. Text columns inside stay capped by their own widths (hero lede,
+   50/50 boxes, 680px article caps), so prose never runs too wide.
+   Tune --fenris-maxw to taste; remove this block to revert. */
+:root {
+  --fenris-maxw: 80rem; /* was 64rem (mw8) */
+}
+
+.mw8 {
+  max-width: var(--fenris-maxw);
+}
+
+@media screen and (min-width: 60em) {
+  .ph4-l {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .ph4-l {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+/* ─── End step G ──────────────────────────────────────────────────────────────── */
+
+/* ─── Step E: sticky frosted header ────────────────────────────────────────────
+   Header sticks to the top with a translucent frosted-glass background (no JS).
+   The old `bb b--black-10` hairline is removed in the template; separation comes
+   from the blur + whitespace. scroll-padding keeps in-page anchor jumps (Notes
+   TOC, Manifesto principles) from landing under the sticky bar. */
+html {
+  scroll-padding-top: 5rem;
+}
+
+.fenris-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(251, 250, 247, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
+}
+/* ─── End step E ──────────────────────────────────────────────────────────────── */
+
+/* ─── Step F: accent bar under section eyebrows ────────────────────────────────
+   Short red accent bar beneath the uppercase eyebrow labels (Qinara's divider
+   move, in the Fenris brand accent). Applied via an `eyebrow` class on the
+   section labels; the margin-bottom utility already on each label keeps the
+   spacing to the following content. */
+.eyebrow::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #fb4b4b; /* fa-red */
+  margin-top: 0.6rem;
+}
+/* ─── End step F ──────────────────────────────────────────────────────────────── */
+
 /*
   Additional colors added by AA 
   prefix `fa-`
@@ -595,3 +658,43 @@ main[role="main"] {
 }
 
 /* ─── End contact form ───────────────────────────────────────────────────────── */
+
+/* ─── Step A: confident all-sans display headlines ─────────────────────────────
+   Display headlines use the brand Avenir humanist-sans (no web font, 0KB) with a
+   unified stack and slightly tightened tracking for a confident, modern feel.
+   Body/UI/eyebrows and small in-body sub-headings are unaffected. Placed at end
+   of file so it wins over the font-family set on .page-title, .note-title, and
+   .manifesto-body h2 above. */
+:root {
+  --fenris-display: "avenir next", avenir, -apple-system, BlinkMacSystemFont,
+    "helvetica neue", helvetica, "segoe ui", roboto, arial, sans-serif;
+}
+
+.fenris-display,
+#testimonials-banner h2,
+#contact-form h2,
+.page-title,
+.note-title,
+.manifesto-body h2 {
+  font-family: var(--fenris-display);
+  letter-spacing: -0.015em;
+}
+
+.fenris-display {
+  letter-spacing: -0.025em;
+}
+/* ─── End step A ──────────────────────────────────────────────────────────────── */
+
+/* ─── Step D: barely-there warm white background ────────────────────────────────
+   Soften pure white to a very subtle warm off-white sitewide (no alternating
+   bands). Override Ananke's heavily-used `bg-white` utility plus the html
+   background so overscroll matches. The frosted header tint (step E) is warmed
+   to match. Revert by removing this block. */
+html {
+  background-color: #fbfaf7;
+}
+
+.bg-white {
+  background-color: #fbfaf7;
+}
+/* ─── End step D ──────────────────────────────────────────────────────────────── */
