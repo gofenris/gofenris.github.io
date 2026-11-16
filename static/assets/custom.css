@@ -659,34 +659,28 @@ main[role="main"] {
 
 /* ─── End contact form ───────────────────────────────────────────────────────── */
 
-/* ─── Step A: serif display headlines ──────────────────────────────────────────
-   Display headlines use a serif; body/UI/eyebrows and small in-body sub-headings
-   stay sans for contrast. Placed at end of file so it wins over the sans
-   font-family set on .page-title, .note-title, and .manifesto-body h2 above.
-   Trialing self-hosted Cormorant Garamond (Latin subset, variable 500-600,
-   ~37KB woff2, one same-origin request, no third-party CDN). To revert to the
-   zero-dependency device stack, drop 'Cormorant Garamond' from --fenris-serif. */
-@font-face {
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 500 600;
-  font-display: swap;
-  src: url('/fonts/cormorant-garamond.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
-    U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
+/* ─── Step A: confident all-sans display headlines ─────────────────────────────
+   Display headlines use the brand Avenir humanist-sans (no web font, 0KB) with a
+   unified stack and slightly tightened tracking for a confident, modern feel.
+   Body/UI/eyebrows and small in-body sub-headings are unaffected. Placed at end
+   of file so it wins over the font-family set on .page-title, .note-title, and
+   .manifesto-body h2 above. */
 :root {
-  --fenris-serif: 'Cormorant Garamond', Georgia, "Times New Roman", ui-serif, serif;
+  --fenris-display: "avenir next", avenir, -apple-system, BlinkMacSystemFont,
+    "helvetica neue", helvetica, "segoe ui", roboto, arial, sans-serif;
 }
 
-.serif-display,
+.fenris-display,
 #testimonials-banner h2,
 #contact-form h2,
 .page-title,
 .note-title,
 .manifesto-body h2 {
-  font-family: var(--fenris-serif);
+  font-family: var(--fenris-display);
+  letter-spacing: -0.015em;
+}
+
+.fenris-display {
+  letter-spacing: -0.025em;
 }
 /* ─── End step A ──────────────────────────────────────────────────────────────── */
