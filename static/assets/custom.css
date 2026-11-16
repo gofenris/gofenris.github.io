@@ -1,4 +1,33 @@
 
+/* ─── Step G: wider, section-controlled layout ─────────────────────────────────
+   Widen the global frame (Ananke uses `mw8` = 64rem everywhere: header, sections,
+   footer, articles) and give sections more breathing room at the edges on large
+   screens. Text columns inside stay capped by their own widths (hero lede,
+   50/50 boxes, 680px article caps), so prose never runs too wide.
+   Tune --fenris-maxw to taste; remove this block to revert. */
+:root {
+  --fenris-maxw: 80rem; /* was 64rem (mw8) */
+}
+
+.mw8 {
+  max-width: var(--fenris-maxw);
+}
+
+@media screen and (min-width: 60em) {
+  .ph4-l {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .ph4-l {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+/* ─── End step G ──────────────────────────────────────────────────────────────── */
+
 /*
   Additional colors added by AA 
   prefix `fa-`
