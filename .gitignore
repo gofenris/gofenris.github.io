@@ -18,8 +18,8 @@ log/
 tags
 
 # Specific files #
+AGENTS.md
 .project
 .vim
 .hugo_build.lock
 PROJECT_NOTE
-
