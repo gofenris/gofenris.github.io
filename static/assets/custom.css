@@ -343,7 +343,9 @@ main[role="main"] {
 .manifesto-sticky {
   position: sticky;
   top: 0;
-  background: white;
+  background-color: rgba(251, 250, 247, 0.85); /* warm frosted glass, matches header */
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
   z-index: 10;
   padding-top: 1rem;
   padding-bottom: 0.25rem;
