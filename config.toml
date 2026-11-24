@@ -19,7 +19,7 @@ pagerSize = 5
 
 [params]
   # text_color = ""
-  favicon = true
+  favicon = "/images/fenris/favicon.ico"
   author = "Aman Ahuja"
   site_logo = "/images/fenris/fenris_logo_2a_t_small2.png"
       # images/fenris_logo_2a_bw.png"
